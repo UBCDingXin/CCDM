@@ -1,0 +1,22 @@
+-f /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/avx2
+-f /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+typing_extensions==4.0.0
+pyparsing
+torch
+torchvision
+numpy
+tqdm
+ninja
+h5py
+kornia
+matplotlib
+pandas
+sklearn
+scipy
+seaborn
+wandb
+PyYaml
+click
+requests
+imageio_ffmpeg
+timm
