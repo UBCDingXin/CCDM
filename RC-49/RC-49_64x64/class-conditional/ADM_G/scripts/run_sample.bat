@@ -1,8 +1,8 @@
 @echo off
 
-set ROOT_PATH=D:/BaiduSyncdisk/Baidu_WD/CCGM/CcDDPM/RC-49/RC-49_64x64/class-conditional/ADM_G
-set DATA_PATH=D:/BaiduSyncdisk/Baidu_WD/datasets/CCGM_or_regression/RC-49
-set EVAL_PATH=D:/BaiduSyncdisk/Baidu_WD/CCGM/CcDDPM/RC-49/RC-49_64x64/evaluation
+set ROOT_PATH=<YOUR_PATH>/CCDM/RC-49/RC-49_64x64/class-conditional/ADM_G
+set DATA_PATH=<YOUR_PATH>/CCDM/datasets/RC-49
+set EVAL_PATH=<YOUR_PATH>/CCDM/RC-49/RC-49_64x64/evaluation
 
 
 set SETTING="Setup1"
@@ -16,7 +16,6 @@ set MODEL_FLAGS=--num_channels 128 --num_res_blocks 3 --learn_sigma True --class
 set SAMPLE_FLAGS=--nfake_per_label 200 --samp_batch_size 200 --timestep_respacing ddim25 --use_ddim True
 set EVAL_CONFIG=--eval_ckpt_path %EVAL_PATH% --dump_fake_data True --comp_FID True --niqe_dump_path %dump_niqe_path%
 
-set CUDA_VISIBLE_DEVICES=0
 python classifier_sample.py ^
     --setup_name %SETTING% ^
     --root_dir %ROOT_PATH% --data_dir %DATA_PATH% --image_size 64 ^

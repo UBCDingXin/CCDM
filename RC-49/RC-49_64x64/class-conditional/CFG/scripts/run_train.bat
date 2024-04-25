@@ -1,8 +1,8 @@
 @echo off
 
-set ROOT_PREFIX=D:/BaiduSyncdisk/Baidu_WD/CCGM/CcDDPM/RC-49/RC-49_64x64
+set ROOT_PREFIX=<YOUR_PATH>/CCDM/RC-49/RC-49_64x64
 set ROOT_PATH=%ROOT_PREFIX%/class-conditional/CFG
-set DATA_PATH=D:/BaiduSyncdisk/Baidu_WD/datasets/CCGM_or_regression/RC-49
+set DATA_PATH=<YOUR_PATH>/CCDM/datasets/RC-49
 set EVAL_PATH=%ROOT_PREFIX%/evaluation
 
 set SEED=2023
@@ -23,7 +23,6 @@ set SETUP="Setup1"
 set NITERS=50000
 set RESUME_NITER=0
 
-set CUDA_VISIBLE_DEVICES=0
 python main.py ^
     --root_path %ROOT_PATH% --data_path %DATA_PATH% --eval_ckpt_path %EVAL_PATH% --seed %SEED% --setting_name %SETUP% ^
     --min_label %MIN_LABEL% --max_label %MAX_LABEL% --img_size %IMG_SIZE% --num_classes %N_CLS% ^
