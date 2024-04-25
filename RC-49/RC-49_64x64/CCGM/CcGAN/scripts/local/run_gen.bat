@@ -4,11 +4,9 @@
 
 @echo off
 
-set CUDA_VISIBLE_DEVICES=0
-
-set ROOT_PATH="D:/BaiduSyncdisk/Baidu_WD/CCGM/CcDDPM/RC-49/RC-49_64x64/CCGM/CcGAN"
-set DATA_PATH="D:/BaiduSyncdisk/Baidu_WD/datasets/CCGM_or_regression/RC-49"
-set EVAL_PATH="D:/BaiduSyncdisk/Baidu_WD/CCGM/CcDDPM/RC-49/RC-49_64x64/evaluation"
+set ROOT_PATH="<YOUR PATH>/CCDM/RC-49/RC-49_64x64/CCGM/CcGAN"
+set DATA_PATH="<YOUR PATH>/datasets/CCGM_or_regression/RC-49"
+set EVAL_PATH="<YOUR PATH>/CCDM/RC-49/RC-49_64x64/evaluation"
 
 set SEED=2024
 set NUM_WORKERS=0
@@ -34,7 +32,7 @@ set LOSS_TYPE="hinge"
 set DIM_GAN=256
 set DIM_EMBED=128
 
-set niqe_dump_path="C:/LocalWD/CcGAN_TPAMI_NIQE/RC-49/NIQE_filter_64x64/fake_data"
+set niqe_dump_path="<YOUR PATH>/CcGAN_TPAMI_NIQE/RC-49/NIQE_filter_64x64/fake_data"
 
 set NITERS=30000
 set Setting=niters%NITERS%
