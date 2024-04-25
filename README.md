@@ -136,7 +136,7 @@ Code repository for Continuous Conditional Diffusion Model (CCDM)
 
 
 
-<!-- --------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------->
 ## 2. Software Requirements
 Here, we provide a list of crucial software environments and python packages employed in the conducted experiments. Please note that we use different computational platforms for our experiments. <br />
 
@@ -194,7 +194,7 @@ Download the following h5 files and put them in `./datasets/SteeringAngle`.
 [SteeringAngle_128x128_download_link](https://1drv.ms/u/s!Arj2pETbYnWQstJ0j7rXhDtm6y4IcA?e=bLQh2e) <br />
 
 
-!------------------------------------>
+<!-- ----------------------------------------------------------------->
 ### 4. Preparation
 
 
@@ -202,4 +202,3 @@ Download the following h5 files and put them in `./datasets/SteeringAngle`.
 ## 5. Training
 As illustrated in the aforementioned repository structure, distinct training codes have been provided for various datasets. <br />
 
-<
