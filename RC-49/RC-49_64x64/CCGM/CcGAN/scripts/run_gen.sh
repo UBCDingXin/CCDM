@@ -28,7 +28,7 @@ LOSS_TYPE="hinge"
 DIM_GAN=256
 DIM_EMBED=128
 
-niqe_dump_path="<YOUR PATH>/CcGAN_TPAMI_NIQE/RC-49/NIQE_filter_64x64/fake_data"
+niqe_dump_path="<YOUR PATH>/CCDM/CcGAN_TPAMI_NIQE/RC-49/NIQE_filter_64x64/fake_data"
 
 NITERS=30000
 Setting=niters${NITERS}
