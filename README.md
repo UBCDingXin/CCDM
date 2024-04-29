@@ -189,6 +189,4 @@ For all methods except ReACGAN and ADCGAN, after the training, the evaluation us
 
 <!------------------------------------>
 ### (2) NIQE
-In the bash scripts for training each method, enable `--dump_fake_for_NIQE --niqe_dump_path <YOUR_NIQE_PATH>` to dump fake images for computing NIQE scores. Please note that you need set the `<YOUR_NIQE_PATH>` correctly. Fake images for computing NIQE are usually stored in `./fake_data`. 
-
-The codes for computing NIQE can be found at [HERE](https://pan.baidu.com/s/1l36fabUMPWVoMgYnvZenGg?pwd=7k11). Run the batch script `run_test.bat` to computing the average NIQE scores. <br />
+In the bash scripts for training each method, enable `--dump_fake_for_NIQE --niqe_dump_path <YOUR_NIQE_PATH>` to dump fake images for computing NIQE scores. Please note that you need set the `<YOUR_NIQE_PATH>` correctly. Fake images for computing NIQE are usually stored in `./CcGAN_TPAMI_NIQE/fake_data`. Run the batch script `run_test.bat` to computing the average NIQE scores. <br />
