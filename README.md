@@ -100,17 +100,16 @@ Download the following h5 files and put them in `./datasets/SteeringAngle`.
 <!-- ----------------------------------------------------------------->
 ## Preparation
 
-Download some neccesary checkpoints for label embedding and evaluation.<br />
-
 ### RC-49
-Download the following ckpt and put it in ./CCDM/RC-49/RC-49_64x64 <br />
-[RC-49 (64x64) Embedding Network](https://1drv.ms/u/s!Arj2pETbYnWQstIzurW-LCFpGz5D7Q?e=X23ybx) <br />
-
-
-[RC-49 (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQstIzurW-LCFpGz5D7Q?e=X23ybx) <br />
-
+Download the following ckpt. Unzip it and put it in "./CCDM/RC-49/RC-49_64x64"
+[RC-49 (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNINsmYzlBdkgSloTg?e=c7g3lU) <br />
 
 ### UTKFace
+Download the following ckpt. Unzip it and put it in "./CCDM/UTKFace/UK64"
+[UTKFace (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNINsmYzlBdkgSloTg?e=c7g3lU) <br />
+
+
+
 
 
 ### Steering Angle
