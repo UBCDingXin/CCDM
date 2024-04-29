@@ -120,8 +120,8 @@ Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace-Wild/U
 [UTKFace-Wild (256x256) Evaluation](https://1drv.ms/f/s!Arj2pETbYnWQvNIWtkNQnosw_UG35g?e=noRdLV) <br />
 
 
-### Baidu Yun Link
-You can also download the above checkpoints from [HERE](https://1drv.ms/f/s!Arj2pETbYnWQvNIWtkNQnosw_UG35g?e=noRdLV) <br />
+### BaiduYun Link
+You can also download the above checkpoints from [BaiduYun](https://1drv.ms/f/s!Arj2pETbYnWQvNIWtkNQnosw_UG35g?e=noRdLV) <br />
 
 
 
