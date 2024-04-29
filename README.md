@@ -76,7 +76,7 @@ Here, we provide a list of crucial software environments and python packages emp
 We use the preprocessed datasets provided by [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
 
 ### The RC-49 Dataset (h5 file)
-Download the following h5 files and put them in `./datasets/UTKFace`.
+Download the following h5 files and put them in `./datasets/RC-49`.
 
 ### The preprocessed UTKFace Dataset (h5 file)
 Download the following h5 files and put them in `./datasets/UTKFace`.
@@ -93,41 +93,48 @@ Download the following h5 files and put them in `./datasets/SteeringAngle`.
 [SteeringAngle_128x128_download_link](https://1drv.ms/u/s!Arj2pETbYnWQstJ0j7rXhDtm6y4IcA?e=bLQh2e) <br />
 
 ### The Cell-200 Dataset (h5 file)
-
+Download the following h5 files and put them in `./datasets/Cell-200`.
 
 ### The UTKFace-Wild Dataset (h5 file)
+Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
+
 
 <!-- ----------------------------------------------------------------->
 ## Preparation
 
 ### RC-49
-Download the following ckpt. Unzip it and put it in "./CCDM/RC-49/RC-49_64x64" <br />
+Download the following checkpoint. Unzip it and put it in "./CCDM/RC-49/RC-49_64x64" <br />
 [RC-49 (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNINsmYzlBdkgSloTg?e=c7g3lU) <br />
 
 ### UTKFace
-Download the following ckpt. Unzip it and put it in "./CCDM/UTKFace/UK64" <br />
+Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace/UK64" <br />
 [UTKFace (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIR8yAfixpzCDQbrQ?e=yGPEZl) <br />
 
-Download the following ckpt. Unzip it and put it in "./CCDM/UTKFace/UK128" <br />
+Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace/UK128" <br />
 [UTKFace (128x128) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIX_mPvqxOHK8Ppyg?e=pM2ShQ) <br />
 
-Download the following ckpt. Unzip it and put it in "./CCDM/UTKFace/UK192" <br />
+Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace/UK192" <br />
 [UTKFace (192x192) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIVcOryy6Rba6obIA?e=AoHB16) <br />
 
 ### Steering Angle
-Download the following ckpt. Unzip it and put it in "./CCDM/SteeringAngle/SA64" <br />
+Download the following checkpoint. Unzip it and put it in "./CCDM/SteeringAngle/SA64" <br />
 [Steering Angle (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIa6KuqZN6G4c8hWA?e=qsfYGy) <br />
 
-Download the following ckpt. Unzip it and put it in "./CCDM/SteeringAngle/SA128" <br />
+Download the following checkpoint. Unzip it and put it in "./CCDM/SteeringAngle/SA128" <br />
 [Steering Angle (128x128) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIYO7bd6tivU7VXBQ?e=E3bRGG) <br />
 
 ### Cell-200
-Download the following ckpt. Unzip it and put it in "./CCDM/Cell-200/Cell-200_64x64" <br />
+Download the following checkpoint. Unzip it and put it in "./CCDM/Cell-200/Cell-200_64x64" <br />
 [Steering Angle (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIZflDROKCaI4f71w?e=ivxSSN) <br />
 
 ### UTKFace-Wild
-Download the following ckpt. Unzip it and put it in "./CCDM/UTKFace-Wild/UKW256" <br />
+Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace-Wild/UKW256" <br />
 [UTKFace-Wild (256x256) Evaluation](https://1drv.ms/f/s!Arj2pETbYnWQvNIWtkNQnosw_UG35g?e=noRdLV) <br />
+
+
+### Baidu Yun Link
+You can also download the above checkpoints from [HERE](https://1drv.ms/f/s!Arj2pETbYnWQvNIWtkNQnosw_UG35g?e=noRdLV) <br />
+
 
 
 <!-- --------------------------------------------------------------- -->
