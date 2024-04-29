@@ -147,20 +147,7 @@ Here, we provide a list of crucial software environments and python packages emp
 | Python | 3.11.3 |
 | Matlab | 2023a |
 
-**For training CcGAN:**
-| Item | Version |
-|---|---|
-| OS | Linux |
-| Python | 3.9 |
-| CUDA  | 11.4 |
-| numpy | 1.23.0 |
-| torch | 1.12.1 |
-| torchvision | 0.13.1 |
-| Pillow | 8.4.0 |
-| accelearate | 0.18.0 |
-| matplotlib | 3.4.2 |
-
-**For training ReACGAN, ADCGAN, ADM-G, and CFG:**
+**For implementing CCDM, CcDPM, ReACGAN, ADCGAN, ADM-G, and CFG:**
 | Item | Version |
 |---|---|
 | OS | Win11 |
@@ -173,6 +160,20 @@ Here, we provide a list of crucial software environments and python packages emp
 | accelearate | 0.20.3 |
 | wandb | 0.15.7 |
 | matplotlib | 3.7.1 |
+
+**For implementing CcGAN:**
+| Item | Version |
+|---|---|
+| OS | Linux |
+| Python | 3.9 |
+| CUDA  | 11.4 |
+| numpy | 1.23.0 |
+| torch | 1.12.1 |
+| torchvision | 0.13.1 |
+| Pillow | 8.4.0 |
+| accelearate | 0.18.0 |
+| matplotlib | 3.4.2 |
+
 
 <!-- --------------------------------------------------------------- -->
 ## 3. Datasets
