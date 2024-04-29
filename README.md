@@ -98,21 +98,21 @@ Download the following h5 files and put them in `./datasets/SteeringAngle`.
 ### The UTKFace-Wild Dataset (h5 file)
 
 <!-- ----------------------------------------------------------------->
-### Preparation
+## Preparation
 
-#### RC-49
-
-
-#### UTKFace
+### RC-49
 
 
-#### Steering Angle
+### UTKFace
 
 
-#### Cell-200
+### Steering Angle
 
 
-#### UTKFace-Wild
+### Cell-200
+
+
+### UTKFace-Wild
 
 
 
