@@ -12,6 +12,13 @@ Here, we provide a list of crucial software environments and python packages emp
 | Python | 3.11.3 |
 | Matlab | 2023a |
 
+| Item | Version |
+|---|---|
+| OS | Linux |
+| Python | 3.10.12 |
+| Matlab | 2021b |
+
+
 **For implementing CCDM (Win):**
 | Item | Version |
 |---|---|

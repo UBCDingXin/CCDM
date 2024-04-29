@@ -11,7 +11,6 @@ set KAPPA=-1.0
 
 set NIQE_PATH=<YOUR_PATH>/CcGAN_TPAMI_NIQE/UTKFace/NIQE_64x64/fake_data
 
-set CUDA_VISIBLE_DEVICES=0
 python main.py ^
     --setting_name %SETTING% ^
     --root_path %ROOT_PATH% --data_path %DATA_PATH% --eval_ckpt_path %EVAL_PATH% ^
