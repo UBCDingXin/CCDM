@@ -6,26 +6,26 @@ Code repository for Continuous Conditional Diffusion Model (CCDM)
 Here, we provide a list of crucial software environments and python packages employed in the conducted experiments. Please note that we use different computational platforms for our experiments. <br />
 
 **For computing NIQE scores and implementing the NIQE filtering (Support both Windows and Linux):**
-| Item | Version | &#124 Item | Version |
+| Item | Version | Item | Version |
 |---|---|---|---|
 | OS | Win11 | OS | Linux |
 | Python | 3.11.3 | Python | 3.10.12 |
 | Matlab | 2023a | Matlab | 2021b |
 
-| Item | Version |
-|---|---|
-| OS | Win11 |
-| Python | 3.11.3 |
-| Matlab | 2023a |
-
-| Item | Version |
-|---|---|
-| OS | Linux |
-| Python | 3.10.12 |
-| Matlab | 2021b |
-
 
 **For implementing CCDM (Support both Windows and Linux):**
+| Item | Version | Item | Version |
+|---|---| ---|---|
+| OS | Win11 | OS | Linux |
+| Python | 3.11.3 | Python | 3.10.12 |
+| CUDA  | 11.8 | CUDA  | 12.1 |
+| numpy | 1.23.5 | numpy | 1.26.4 |
+| torch | 2.0.1 | torch | 2.2.1 |
+| torchvision | 0.15.2 | torchvision | 0.17.1 |
+| Pillow | 9.5.0 | Pillow | 9.0.1 |
+| accelearate | 0.20.3 | accelearate | 0.27.2 |
+
+**For implementing ReACGAN, ADCGAN, ADM-G, and CFG (Support Windows):**
 | Item | Version |
 |---|---|
 | OS | Win11 |
@@ -38,31 +38,7 @@ Here, we provide a list of crucial software environments and python packages emp
 | accelearate | 0.20.3 |
 | wandb | 0.15.7 |
 
-| Item | Version |
-|---|---|
-| OS | Linux |
-| Python | 3.10.12 |
-| CUDA  | 12.1 |
-| numpy | 1.26.4 |
-| torch | 2.2.1 |
-| torchvision | 0.17.1 |
-| Pillow | 9.0.1 |
-| accelearate | 0.27.2 |
-
-**For implementing ReACGAN, ADCGAN, ADM-G, and CFG (Support both Windows):**
-| Item | Version |
-|---|---|
-| OS | Win11 |
-| Python | 3.11.3 |
-| CUDA  | 11.8 |
-| numpy | 1.23.5 |
-| torch | 2.0.1 |
-| torchvision | 0.15.2 |
-| Pillow | 9.5.0 |
-| accelearate | 0.20.3 |
-| wandb | 0.15.7 |
-
-**For implementing CcGAN and Dual-NDA (Support both Linux):**
+**For implementing CcGAN and Dual-NDA (Support Linux):**
 | Item | Version |
 |---|---|
 | OS | Linux |
