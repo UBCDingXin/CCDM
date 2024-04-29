@@ -6,6 +6,12 @@ Code repository for Continuous Conditional Diffusion Model (CCDM)
 Here, we provide a list of crucial software environments and python packages employed in the conducted experiments. Please note that we use different computational platforms for our experiments. <br />
 
 **For computing NIQE scores and implementing the NIQE filtering (Support both Windows and Linux):**
+| Item | Version | &#124 Item | Version |
+|---|---|---|---|
+| OS | Win11 | OS | Linux |
+| Python | 3.11.3 | Python | 3.10.12 |
+| Matlab | 2023a | Matlab | 2021b |
+
 | Item | Version |
 |---|---|
 | OS | Win11 |
@@ -103,7 +109,7 @@ Download the following h5 files and put them in `./datasets/Cell-200`.
 ### The UTKFace-Wild Dataset (h5 file)
 Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 #### UTKFace-Wild (256x256)
-[UTK256_download_link]() <br />
+[UTK256_download_link](https://pan.baidu.com/s/1l36fabUMPWVoMgYnvZenGg?pwd=7k11) <br />
 
 <!-- ----------------------------------------------------------------->
 ## Preparation
