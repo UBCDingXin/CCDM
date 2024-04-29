@@ -1,143 +1,8 @@
 # CCDM
 Code repository for Continuous Conditional Diffusion Model (CCDM)
 
-<!-- --------------------------------------------------------------- -->
---------------------------------------------------------
-## 1. Repository Structure and Preparation
-```
-└── CCDM
-    ├── UTKFace
-    │   ├── UTKFace_64x64
-    │   │   ├──CcGAN
-    |   |   |  ├──baseline
-    |   |   |  └──NDA
-    │   │   ├──class-conditional_GAN
-    |   |   |  └──StudioGAN
-    |   |   ├──diffusion_models
-    |   |   |  ├──ADM_G
-    |   |   |  └──classifier_free_guidance
-    │   │   └──evaluation
-    |   |      └──eval_models
-    │   └── UTKFace_128x128
-    │       ├──CcGAN
-    |       |  ├──baseline
-    |       |  └──NDA
-    │       ├──class-conditional_GAN
-    |       |  └──StudioGAN
-    |       ├──diffusion_models
-    |       |  ├──ADM_G
-    |       |  └──classifier_free_guidance
-    │       └──evaluation
-    |          └──eval_models
-    ├── UTKFace
-    │   ├── UTKFace_64x64
-    │   │   ├──CcGAN
-    |   |   |  ├──baseline
-    |   |   |  └──NDA
-    │   │   ├──class-conditional_GAN
-    |   |   |  └──StudioGAN
-    |   |   ├──diffusion_models
-    |   |   |  ├──ADM_G
-    |   |   |  └──classifier_free_guidance
-    │   │   └──evaluation
-    |   |      └──eval_models
-    │   └── UTKFace_128x128
-    │       ├──CcGAN
-    |       |  ├──baseline
-    |       |  └──NDA
-    │       ├──class-conditional_GAN
-    |       |  └──StudioGAN
-    |       ├──diffusion_models
-    |       |  ├──ADM_G
-    |       |  └──classifier_free_guidance
-    │       └──evaluation
-    |          └──eval_models
-    ├── SteeringAngle
-    │   ├── SteeringAngle_64x64
-    │   │   ├──CcGAN
-    |   |   |  ├──baseline
-    |   |   |  └──NDA
-    │   │   ├──class-conditional_GAN
-    |   |   |  └──StudioGAN
-    |   |   ├──diffusion_models
-    |   |   |  ├──ADM_G
-    |   |   |  └──classifier_free_guidance
-    │   │   └──evaluation
-    |   |      └──eval_models
-    │   └── SteeringAngle_128x128
-    │       ├──CcGAN
-    |       |  ├──baseline
-    |       |  └──NDA
-    │       ├──class-conditional_GAN
-    |       |  └──StudioGAN
-    |       ├──diffusion_models
-    |       |  ├──ADM_G
-    |       |  └──classifier_free_guidance
-    │       └──evaluation
-    |          └──eval_models
-    ├── UTKFace
-    │   ├── UTKFace_64x64
-    │   │   ├──CcGAN
-    |   |   |  ├──baseline
-    |   |   |  └──NDA
-    │   │   ├──class-conditional_GAN
-    |   |   |  └──StudioGAN
-    |   |   ├──diffusion_models
-    |   |   |  ├──ADM_G
-    |   |   |  └──classifier_free_guidance
-    │   │   └──evaluation
-    |   |      └──eval_models
-    │   └── UTKFace_128x128
-    │       ├──CcGAN
-    |       |  ├──baseline
-    |       |  └──NDA
-    │       ├──class-conditional_GAN
-    |       |  └──StudioGAN
-    |       ├──diffusion_models
-    |       |  ├──ADM_G
-    |       |  └──classifier_free_guidance
-    │       └──evaluation
-    |          └──eval_models
-    ├── UTKFace
-    │   ├── UTKFace_64x64
-    │   │   ├──CcGAN
-    |   |   |  ├──baseline
-    |   |   |  └──NDA
-    │   │   ├──class-conditional_GAN
-    |   |   |  └──StudioGAN
-    |   |   ├──diffusion_models
-    |   |   |  ├──ADM_G
-    |   |   |  └──classifier_free_guidance
-    │   │   └──evaluation
-    |   |      └──eval_models
-    │   └── UTKFace_128x128
-    │       ├──CcGAN
-    |       |  ├──baseline
-    |       |  └──NDA
-    │       ├──class-conditional_GAN
-    |       |  └──StudioGAN
-    |       ├──diffusion_models
-    |       |  ├──ADM_G
-    |       |  └──classifier_free_guidance
-    │       └──evaluation
-    |          └──eval_models
-    └── NIQE
-        ├── UTKFace
-        │   ├── NIQE_64x64
-        │   ├── NIQE_128x128
-        │   ├── NIQE_filter_64x64
-        │   └── NIQE_filter_128x128
-        └── SteeringAngle
-           ├── NIQE_64x64
-           ├── NIQE_128x128     
-           ├── NIQE_filter_64x64
-           └── NIQE_filter_128x128
-```
-
-
-
 <!-- ----------------------------------------------------------------->
-## 2. Software Requirements
+## Software Requirements
 Here, we provide a list of crucial software environments and python packages employed in the conducted experiments. Please note that we use different computational platforms for our experiments. <br />
 
 **For computing NIQE scores and implementing the NIQE filtering:**
@@ -199,7 +64,7 @@ Here, we provide a list of crucial software environments and python packages emp
 
 
 <!-- --------------------------------------------------------------- -->
-## 3. Datasets
+## Datasets
 
 We use the preprocessed datasets provided by [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
 
@@ -226,10 +91,10 @@ Download the following h5 files and put them in `./datasets/SteeringAngle`.
 ### The UTKFace-Wild Dataset (h5 file)
 
 <!-- ----------------------------------------------------------------->
-### 4. Preparation
+### Preparation
 
 
 <!-- --------------------------------------------------------------- -->
-## 5. Training
+## Training
 As illustrated in the aforementioned repository structure, distinct training codes have been provided for various datasets. <br />
 
