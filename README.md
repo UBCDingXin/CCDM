@@ -5,7 +5,7 @@ Code repository for Continuous Conditional Diffusion Model (CCDM)
 ## Software Requirements
 Here, we provide a list of crucial software environments and python packages employed in the conducted experiments. Please note that we use different computational platforms for our experiments. <br />
 
-**For computing NIQE scores and implementing the NIQE filtering:**
+**For computing NIQE scores and implementing the NIQE filtering (Support both Windows and Linux):**
 | Item | Version |
 |---|---|
 | OS | Win11 |
@@ -19,7 +19,7 @@ Here, we provide a list of crucial software environments and python packages emp
 | Matlab | 2021b |
 
 
-**For implementing CCDM (Win):**
+**For implementing CCDM (Support both Windows and Linux):**
 | Item | Version |
 |---|---|
 | OS | Win11 |
@@ -32,7 +32,6 @@ Here, we provide a list of crucial software environments and python packages emp
 | accelearate | 0.20.3 |
 | wandb | 0.15.7 |
 
-**For implementing CCDM (Linux):**
 | Item | Version |
 |---|---|
 | OS | Linux |
@@ -44,7 +43,7 @@ Here, we provide a list of crucial software environments and python packages emp
 | Pillow | 9.0.1 |
 | accelearate | 0.27.2 |
 
-**For implementing ReACGAN, ADCGAN, ADM-G, and CFG:**
+**For implementing ReACGAN, ADCGAN, ADM-G, and CFG (Support both Windows):**
 | Item | Version |
 |---|---|
 | OS | Win11 |
@@ -57,7 +56,7 @@ Here, we provide a list of crucial software environments and python packages emp
 | accelearate | 0.20.3 |
 | wandb | 0.15.7 |
 
-**For implementing CcGAN and Dual-NDA:**
+**For implementing CcGAN and Dual-NDA (Support both Linux):**
 | Item | Version |
 |---|---|
 | OS | Linux |
@@ -77,6 +76,8 @@ We use the preprocessed datasets provided by [Ding et. al. (2023)](https://githu
 
 ### The RC-49 Dataset (h5 file)
 Download the following h5 files and put them in `./datasets/RC-49`.
+#### RC-49 (64x64)
+[RC-49_64x64_download_link](https://1drv.ms/u/s!Arj2pETbYnWQstI0OuDMqpEZA80tRQ?e=fJJbWw) <br />
 
 ### The preprocessed UTKFace Dataset (h5 file)
 Download the following h5 files and put them in `./datasets/UTKFace`.
@@ -84,6 +85,8 @@ Download the following h5 files and put them in `./datasets/UTKFace`.
 [UTKFace_64x64_download_link](https://1drv.ms/u/s!Arj2pETbYnWQstIzurW-LCFpGz5D7Q?e=X23ybx) <br />
 #### UTKFace (128x128)
 [UTKFace_128x128_download_link](https://1drv.ms/u/s!Arj2pETbYnWQstJGpTgNYrHE8DgDzA?e=d7AeZq) <br />
+#### UTKFace (192x192)
+[UTKFace_192x192_download_link](https://1drv.ms/u/s!Arj2pETbYnWQstY8hLN3lWEyX0lNLA?e=BcjUQh) <br />
 
 ### The Steering Angle dataset (h5 file)
 Download the following h5 files and put them in `./datasets/SteeringAngle`.
@@ -94,10 +97,13 @@ Download the following h5 files and put them in `./datasets/SteeringAngle`.
 
 ### The Cell-200 Dataset (h5 file)
 Download the following h5 files and put them in `./datasets/Cell-200`.
+#### Cell-200 (64x64)
+[Cell-200_64x64_download_link](https://1drv.ms/u/s!Arj2pETbYnWQstIt73ZfGOAjBMiTmQ?e=cvxFIN) <br />
 
 ### The UTKFace-Wild Dataset (h5 file)
 Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
-
+#### UTKFace-Wild (256x256)
+[UTK256_download_link]() <br />
 
 <!-- ----------------------------------------------------------------->
 ## Preparation
