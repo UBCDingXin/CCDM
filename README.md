@@ -121,7 +121,7 @@ Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace-Wild/U
 
 
 ### BaiduYun Link
-You can also download the above checkpoints from [BaiduYun](https://1drv.ms/f/s!Arj2pETbYnWQvNIWtkNQnosw_UG35g?e=noRdLV) <br />
+You can also download the above checkpoints from [BaiduYun](https://pan.baidu.com/s/1l36fabUMPWVoMgYnvZenGg?pwd=7k11) <br />
 
 
 
