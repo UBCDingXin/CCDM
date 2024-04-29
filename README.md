@@ -90,6 +90,67 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 <!-- ----------------------------------------------------------------->
 ## Preparation
 
+
+
+
+<!-- --------------------------------------------------------------- -->
+## Training
+Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) and [Ding et. al. (2024)](https://github.com/UBCDingXin/Dual-NDA), distinct training codes have been provided for various datasets. <br />
+
+### (1) RC-49 (64x64)
+
+
+
+
+
+### (2) UTKFace (64x64)
+
+
+
+
+
+### (3) UTKFace (128x128)
+
+
+
+
+
+### (4) UTKFace (192x192)
+
+
+
+
+### (5) Steering Angle (64x64)
+
+
+
+
+
+### (6) Steering Angle (128x128)
+
+
+
+
+
+### (7) Cell-200 (64x64)
+
+
+
+
+
+### (8) UTKFace-Wild (256x256)
+
+
+
+
+
+
+<!-- --------------------------------------------------------------- -->
+## 4. Sampling and Evaluation
+
+<!------------------------------------>
+### (0) Download Evaluation Checkpoints
+
 ### RC-49
 Download the following checkpoint. Unzip it and put it in "./CCDM/RC-49/RC-49_64x64" <br />
 [RC-49 (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNINsmYzlBdkgSloTg?e=c7g3lU) <br />
@@ -119,13 +180,15 @@ Download the following checkpoint. Unzip it and put it in "./CCDM/Cell-200/Cell-
 Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace-Wild/UKW256" <br />
 [UTKFace-Wild (256x256) Evaluation](https://1drv.ms/f/s!Arj2pETbYnWQvNIWtkNQnosw_UG35g?e=noRdLV) <br />
 
-
 ### BaiduYun Link
 You can also download the above checkpoints from [BaiduYun](https://pan.baidu.com/s/1l36fabUMPWVoMgYnvZenGg?pwd=7k11) <br />
 
+<!------------------------------------>
+### (1) SFID, Diversity, and Label Score
+For all methods except ReACGAN and ADCGAN, after the training, the evaluation usually automatically starts. The evaluation setups are consistent with [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
 
+<!------------------------------------>
+### (2) NIQE
+In the bash scripts for training each method, enable `--dump_fake_for_NIQE --niqe_dump_path <YOUR_NIQE_PATH>` to dump fake images for computing NIQE scores. Please note that you need set the `<YOUR_NIQE_PATH>` correctly. Fake images for computing NIQE are usually stored in `./fake_data`. 
 
-<!-- --------------------------------------------------------------- -->
-## Training
-As illustrated in the aforementioned repository structure, distinct training codes have been provided for various datasets. <br />
-
+The codes for computing NIQE can be found at [HERE](https://pan.baidu.com/s/1l36fabUMPWVoMgYnvZenGg?pwd=7k11). Run the batch script `run_test.bat` to computing the average NIQE scores. <br />
