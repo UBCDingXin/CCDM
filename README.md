@@ -147,7 +147,7 @@ Here, we provide a list of crucial software environments and python packages emp
 | Python | 3.11.3 |
 | Matlab | 2023a |
 
-**For implementing CCDM, CcDPM, ReACGAN, ADCGAN, ADM-G, and CFG:**
+**For implementing CCDM (Win):**
 | Item | Version |
 |---|---|
 | OS | Win11 |
@@ -159,9 +159,33 @@ Here, we provide a list of crucial software environments and python packages emp
 | Pillow | 9.5.0 |
 | accelearate | 0.20.3 |
 | wandb | 0.15.7 |
-| matplotlib | 3.7.1 |
 
-**For implementing CcGAN:**
+**For implementing CCDM (Linux):**
+| Item | Version |
+|---|---|
+| OS | Linux |
+| Python | 3.10.12 |
+| CUDA  | 12.1 |
+| numpy | 1.26.4 |
+| torch | 2.2.1 |
+| torchvision | 0.17.1 |
+| Pillow | 9.0.1 |
+| accelearate | 0.27.2 |
+
+**For implementing ReACGAN, ADCGAN, ADM-G, and CFG:**
+| Item | Version |
+|---|---|
+| OS | Win11 |
+| Python | 3.11.3 |
+| CUDA  | 11.8 |
+| numpy | 1.23.5 |
+| torch | 2.0.1 |
+| torchvision | 0.15.2 |
+| Pillow | 9.5.0 |
+| accelearate | 0.20.3 |
+| wandb | 0.15.7 |
+
+**For implementing CcGAN and Dual-NDA:**
 | Item | Version |
 |---|---|
 | OS | Linux |
@@ -172,13 +196,15 @@ Here, we provide a list of crucial software environments and python packages emp
 | torchvision | 0.13.1 |
 | Pillow | 8.4.0 |
 | accelearate | 0.18.0 |
-| matplotlib | 3.4.2 |
 
 
 <!-- --------------------------------------------------------------- -->
 ## 3. Datasets
 
 We use the preprocessed datasets provided by [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
+
+### The RC-49 Dataset (h5 file)
+Download the following h5 files and put them in `./datasets/UTKFace`.
 
 ### The preprocessed UTKFace Dataset (h5 file)
 Download the following h5 files and put them in `./datasets/UTKFace`.
@@ -194,6 +220,10 @@ Download the following h5 files and put them in `./datasets/SteeringAngle`.
 #### Steering Angle (128x128)
 [SteeringAngle_128x128_download_link](https://1drv.ms/u/s!Arj2pETbYnWQstJ0j7rXhDtm6y4IcA?e=bLQh2e) <br />
 
+### The Cell-200 Dataset (h5 file)
+
+
+### The UTKFace-Wild Dataset (h5 file)
 
 <!-- ----------------------------------------------------------------->
 ### 4. Preparation
