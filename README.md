@@ -97,6 +97,8 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 ## Training
 Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) and [Ding et. al. (2024)](https://github.com/UBCDingXin/Dual-NDA), distinct training codes have been provided for various datasets. <br />
 
+For simplicity, we only show how to implement the proposed CCDM in each experiment. <br />
+
 ### (1) RC-49 (64x64)
 
 
@@ -139,8 +141,6 @@ Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) an
 
 
 ### (8) UTKFace-Wild (256x256)
-
-
 
 
 
