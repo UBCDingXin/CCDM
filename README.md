@@ -89,6 +89,10 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 
 
 <!-- --------------------------------------------------------------- -->
+## Preparation
+Download a zip file from [OneDrive]() or [BaiduYun]() and unzip it at `./CCDM`. This zip file contains the checkpoints for the ILI's embedding networks in the experiments, alongside the checkpoints of the evaluation models corresponding to every individual experiment.
+
+<!-- --------------------------------------------------------------- -->
 ## Training
 Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) and [Ding et. al. (2024)](https://github.com/UBCDingXin/Dual-NDA), distinct training codes have been provided for various datasets. <br />
 
@@ -126,42 +130,6 @@ Go to the directory `./UTKFace_Wild/UKW256/CCGM/CCDM`. Run the training script `
 
 <!-- --------------------------------------------------------------- -->
 ## 4. Sampling and Evaluation
-
-<!------------------------------------>
-### (0) Download Evaluation Checkpoints
-
-### RC-49
-Download the following checkpoint. Unzip it and put it in "./CCDM/RC-49/RC-49_64x64" <br />
-[RC-49 (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNINsmYzlBdkgSloTg?e=c7g3lU) <br />
-
-### UTKFace
-Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace/UK64" <br />
-[UTKFace (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIR8yAfixpzCDQbrQ?e=yGPEZl) <br />
-
-Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace/UK128" <br />
-[UTKFace (128x128) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIX_mPvqxOHK8Ppyg?e=pM2ShQ) <br />
-
-Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace/UK192" <br />
-[UTKFace (192x192) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIVcOryy6Rba6obIA?e=AoHB16) <br />
-
-### Steering Angle
-Download the following checkpoint. Unzip it and put it in "./CCDM/SteeringAngle/SA64" <br />
-[Steering Angle (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIa6KuqZN6G4c8hWA?e=qsfYGy) <br />
-
-Download the following checkpoint. Unzip it and put it in "./CCDM/SteeringAngle/SA128" <br />
-[Steering Angle (128x128) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIYO7bd6tivU7VXBQ?e=E3bRGG) <br />
-
-### Cell-200
-Download the following checkpoint. Unzip it and put it in "./CCDM/Cell-200/Cell-200_64x64" <br />
-[Steering Angle (64x64) Evaluation](https://1drv.ms/u/s!Arj2pETbYnWQvNIZflDROKCaI4f71w?e=ivxSSN) <br />
-
-### UTKFace-Wild
-Download the following checkpoint. Unzip it and put it in "./CCDM/UTKFace-Wild/UKW256" <br />
-[UTKFace-Wild (256x256) Evaluation](https://1drv.ms/f/s!Arj2pETbYnWQvNIWtkNQnosw_UG35g?e=noRdLV) <br />
-
-### BaiduYun Link
-You can also download the above checkpoints from [BaiduYun](https://pan.baidu.com/s/1l36fabUMPWVoMgYnvZenGg?pwd=7k11) <br />
-
 <!------------------------------------>
 ### (1) SFID, Diversity, and Label Score
 For all methods except ReACGAN and ADCGAN, after the training, the evaluation usually automatically starts. The evaluation setups are consistent with [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
