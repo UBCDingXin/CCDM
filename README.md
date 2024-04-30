@@ -1,4 +1,4 @@
-# CCDM: Continuous Conditional Diffusion Model for Image Generation
+# CCDM: Continuous Conditional Diffusion Models for Image Generation
 <!-- Code repository for Continuous Conditional Diffusion Model (CCDM) -->
 
 <!-- ----------------------------------------------------------------->
@@ -105,19 +105,14 @@ Go to the directory `./RC-49/RC-49_64x64/CCGM/CCDM`. Run the training script `./
 Please note that we also provide the training scripts named `run_train_ccdpm.bat` and `run_train_ccdpm.sh` for implementing CcDPM on RC-49.
 
 ### (2) UTKFace (64x64)
-
-
-
-
+Go to the directory `./UTKFace/UK64/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
 ### (3) UTKFace (128x128)
-
-
-
+Go to the directory `./UTKFace/UK128/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
 
 ### (4) UTKFace (192x192)
-
+Go to the directory `./UTKFace/UK192/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
 
 
