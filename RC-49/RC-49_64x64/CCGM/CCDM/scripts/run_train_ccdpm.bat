@@ -4,12 +4,11 @@ set ROOT_PREFIX=<YOUR_PATH>/CCDM/RC-49/RC-49_64x64
 set ROOT_PATH=%ROOT_PREFIX%/CCGM/CCDM
 set DATA_PATH=<YOUR_PATH>/CCDM/datasets/CCGM_or_regression/RC-49
 set EVAL_PATH=%ROOT_PREFIX%/evaluation
+set NIQE_PATH=<YOUR_PATH>/CcGAN_TPAMI_NIQE/RC-49/NIQE_64x64/fake_data
 
 set SETTING="Setup_CcDPM"
 set SIGMA=-1.0
 set KAPPA=-2.0
-
-set NIQE_PATH=<YOUR_PATH>/CcGAN_TPAMI_NIQE/RC-49/NIQE_64x64/fake_data
 
 python main.py ^
     --setting_name %SETTING% ^

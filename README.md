@@ -1,5 +1,5 @@
-# CCDM: 
-Code repository for Continuous Conditional Diffusion Model (CCDM)
+# CCDM: Continuous Conditional Diffusion Model for Image Generation
+<!-- Code repository for Continuous Conditional Diffusion Model (CCDM) -->
 
 <!-- ----------------------------------------------------------------->
 ## Software Requirements
@@ -97,13 +97,12 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 ## Training
 Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) and [Ding et. al. (2024)](https://github.com/UBCDingXin/Dual-NDA), distinct training codes have been provided for various datasets. <br />
 
-For simplicity, we only show how to implement the proposed CCDM in each experiment. <br />
+For simplicity, we only show how to implement the proposed **CCDM** in each experiment. <br />
 
 ### (1) RC-49 (64x64)
+Go to the directory `./RC-49/RC-49_64x64/CCGM/CCDM`. Run the training script `./scripts/run_train_ccdm.bat` for Windows or `./scripts/run_train_ccdm.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
-
-
-
+Please note that we also provide the training scripts named `run_train_ccdpm.bat` and `run_train_ccdpm.sh` for implementing CcDPM on RC-49.
 
 ### (2) UTKFace (64x64)
 
