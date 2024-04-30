@@ -1,4 +1,4 @@
-# The Code Repository for ``CCDM: Continuous Conditional Diffusion Models for Image Generation"
+# The Code Repository for "CCDM: Continuous Conditional Diffusion Models for Image Generation"
 
 <!-- ----------------------------------------------------------------->
 ## Software Requirements
@@ -89,7 +89,7 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 
 <!-- --------------------------------------------------------------- -->
 ## Preparation
-Download a zip file from [OneDrive]() or [BaiduYun]() and unzip it at `./CCDM`. This zip file contains the checkpoints for the ILI's embedding networks, alongside the checkpoints of the evaluation models corresponding to every individual experiment.
+Download a zip file from [OneDrive]() or [BaiduYun](https://pan.baidu.com/s/1xDUaC9fuMSq0hL0PCWeVNQ?pwd=9jxz) and unzip it at `./CCDM`. This zip file contains the checkpoints for the ILI's embedding networks, alongside the checkpoints of the evaluation models corresponding to every individual experiment.
 
 <!-- --------------------------------------------------------------- -->
 ## Training
