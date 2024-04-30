@@ -87,11 +87,6 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 #### UTKFace-Wild (256x256)
 [UKW256_download_link](https://1drv.ms/u/s!Arj2pETbYnWQvNIcEZIlU4y4aLT5Lg?e=4JPBDE) <br />
 
-<!-- ----------------------------------------------------------------->
-## Preparation
-
-
-
 
 <!-- --------------------------------------------------------------- -->
 ## Training
