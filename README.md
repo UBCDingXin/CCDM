@@ -1,7 +1,13 @@
 # The Code Repository for "CCDM: Continuous Conditional Diffusion Models for Image Generation"
 
 
+--------------------------------------------------------
 
+This repository provides the source codes for the experiments in our papers for CCDMs. <br />
+If you use this code, please cite
+```text
+XXX
+```
 
 <!-- ----------------------------------------------------------------->
 --------------------------------------------------------
