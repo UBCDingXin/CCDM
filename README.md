@@ -1,5 +1,4 @@
-# CCDM: Continuous Conditional Diffusion Models for Image Generation
-<!-- Code repository for Continuous Conditional Diffusion Model (CCDM) -->
+# The Code Repository for ``CCDM: Continuous Conditional Diffusion Models for Image Generation"
 
 <!-- ----------------------------------------------------------------->
 ## Software Requirements
@@ -90,7 +89,7 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 
 <!-- --------------------------------------------------------------- -->
 ## Preparation
-Download a zip file from [OneDrive]() or [BaiduYun]() and unzip it at `./CCDM`. This zip file contains the checkpoints for the ILI's embedding networks in the experiments, alongside the checkpoints of the evaluation models corresponding to every individual experiment.
+Download a zip file from [OneDrive]() or [BaiduYun]() and unzip it at `./CCDM`. This zip file contains the checkpoints for the ILI's embedding networks, alongside the checkpoints of the evaluation models corresponding to every individual experiment.
 
 <!-- --------------------------------------------------------------- -->
 ## Training
@@ -108,7 +107,6 @@ Go to the directory `./UTKFace/UK64/CCGM/CCDM`. Run the training script `./scrip
 
 ### (3) UTKFace (128x128)
 Go to the directory `./UTKFace/UK128/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
-
 
 ### (4) UTKFace (192x192)
 Go to the directory `./UTKFace/UK192/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
