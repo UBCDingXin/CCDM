@@ -121,7 +121,7 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
 ## Preparation
-Please download the zip file from either [OneDrive]() or [BaiduYun](https://pan.baidu.com/s/1xDUaC9fuMSq0hL0PCWeVNQ?pwd=9jxz) and extract its contents to the `./CCDM` directory. This zip archive includes the necessary checkpoints for the ILI's embedding networks, as well as the corresponding checkpoints for the evaluation models related to each individual experiment.
+Please download the zip file from either [OneDrive](https://1drv.ms/u/s!Arj2pETbYnWQvNIf4ZaawrD7v2Ugwg?e=JuRJfV) or [BaiduYun](https://pan.baidu.com/s/1xDUaC9fuMSq0hL0PCWeVNQ?pwd=9jxz) and extract its contents to the `./CCDM` directory. This zip archive includes the necessary checkpoints for the ILI's embedding networks, as well as the corresponding checkpoints for the evaluation models related to each individual experiment.
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
