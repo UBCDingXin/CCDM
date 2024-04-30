@@ -1,4 +1,4 @@
-# CCDM
+# CCDM: 
 Code repository for Continuous Conditional Diffusion Model (CCDM)
 
 <!-- ----------------------------------------------------------------->
@@ -134,7 +134,9 @@ For simplicity, we only show how to implement the proposed CCDM in each experime
 
 
 
+
 ### (7) Cell-200 (64x64)
+
 
 
 
