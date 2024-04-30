@@ -1,9 +1,10 @@
 # The Code Repository for "CCDM: Continuous Conditional Diffusion Models for Image Generation"
---------------------------------------------------------
+
 
 
 
 <!-- ----------------------------------------------------------------->
+--------------------------------------------------------
 ## Some Illustrative Figures
 
 <p align="center">
@@ -23,6 +24,7 @@
 
 
 <!-- ----------------------------------------------------------------->
+--------------------------------------------------------
 ## Software Requirements
 Here, we provide a list of crucial software environments and python packages employed in the conducted experiments. Please note that we use different computational platforms for our experiments. <br />
 
@@ -73,6 +75,7 @@ Here, we provide a list of crucial software environments and python packages emp
 
 
 <!-- --------------------------------------------------------------- -->
+--------------------------------------------------------
 ## Datasets
 
 We use the preprocessed datasets provided by [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
@@ -110,10 +113,12 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 
 
 <!-- --------------------------------------------------------------- -->
+--------------------------------------------------------
 ## Preparation
 Please download the zip file from either [OneDrive]() or [BaiduYun](https://pan.baidu.com/s/1xDUaC9fuMSq0hL0PCWeVNQ?pwd=9jxz) and extract its contents to the `./CCDM` directory. This zip archive includes the necessary checkpoints for the ILI's embedding networks, as well as the corresponding checkpoints for the evaluation models related to each individual experiment.
 
 <!-- --------------------------------------------------------------- -->
+--------------------------------------------------------
 ## Training
 Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) and [Ding et. al. (2024)](https://github.com/UBCDingXin/Dual-NDA), distinct training codes have been provided for various datasets. <br />
 
@@ -149,6 +154,7 @@ Go to the directory `./UTKFace_Wild/UKW256/CCGM/CCDM`. Run the training script `
 
 
 <!-- --------------------------------------------------------------- -->
+--------------------------------------------------------
 ## 4. Sampling and Evaluation
 <!------------------------------------>
 ### (1) SFID, Diversity, and Label Score
