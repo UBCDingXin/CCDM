@@ -128,7 +128,7 @@ Please download the zip file from either [OneDrive](https://1drv.ms/u/s!Arj2pETb
 ## Training
 Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) and [Ding et. al. (2024)](https://github.com/UBCDingXin/Dual-NDA), distinct training codes have been provided for various datasets. <br />
 
-For simplicity, we only show how to implement the proposed **CCDM** in each experiment. <br />
+*For simplicity, we only show how to implement the proposed **CCDM** in each experiment.* <br />
 
 ### (1) RC-49 (64x64)
 Go to the directory `./RC-49/RC-49_64x64/CCGM/CCDM`. Run the training script `./scripts/run_train_ccdm.bat` for Windows or `./scripts/run_train_ccdm.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
