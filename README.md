@@ -114,31 +114,19 @@ Go to the directory `./UTKFace/UK128/CCGM/CCDM`. Run the training script `./scri
 ### (4) UTKFace (192x192)
 Go to the directory `./UTKFace/UK192/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
-
-
 ### (5) Steering Angle (64x64)
-
-
-
-
+Go to the directory `./UTKFace/SA64/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
 ### (6) Steering Angle (128x128)
-
-
-
-
+Go to the directory `./UTKFace/SA128/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
 
 ### (7) Cell-200 (64x64)
-
-
-
-
+Go to the directory `./Cell-200/Cell-200_64x64/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
 
 ### (8) UTKFace-Wild (256x256)
-
-
+Go to the directory `./UTKFace_Wild/UKW256/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
 
 <!-- --------------------------------------------------------------- -->
