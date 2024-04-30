@@ -1,5 +1,25 @@
 # The Code Repository for "CCDM: Continuous Conditional Diffusion Models for Image Generation"
 
+
+--------------------------------------------------------
+## Some Illustrative Figures
+
+<p align="center">
+  <img src="images/illustration_CCGM.png">
+  Illustration of the CCGM task with sample images from the UTKFace and Steering Angle datasets.
+</p>
+
+<p align="center">
+  <img src="images/overall_workflow.png">
+  The overall workflow of CCDMs. The training process entails adapting a modified U-Net using the proposed hard vicinal loss and integrating CcGANs' label embedding network, referred to as ILI. For the sampling process, a classifier-free guidance-based mechanism is employed to produce a linear combination of a conditional output and an unconditional output from the trained U-Net. A DDIM-based sampler is then used to generate new images based on this linear combination.
+</p>
+
+<p align="center">
+  <img src="images/unet_architecture.png">
+  The network architecture of the denoising U-Net.
+</p>
+
+
 <!-- ----------------------------------------------------------------->
 ## Software Requirements
 Here, we provide a list of crucial software environments and python packages employed in the conducted experiments. Please note that we use different computational platforms for our experiments. <br />
@@ -89,7 +109,7 @@ Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
 
 <!-- --------------------------------------------------------------- -->
 ## Preparation
-Download a zip file from [OneDrive]() or [BaiduYun](https://pan.baidu.com/s/1xDUaC9fuMSq0hL0PCWeVNQ?pwd=9jxz) and unzip it at `./CCDM`. This zip file contains the checkpoints for the ILI's embedding networks, alongside the checkpoints of the evaluation models corresponding to every individual experiment.
+Please download the zip file from either [OneDrive]() or [BaiduYun](https://pan.baidu.com/s/1xDUaC9fuMSq0hL0PCWeVNQ?pwd=9jxz) and extract its contents to the `./CCDM` directory. This zip archive includes the necessary checkpoints for the ILI's embedding networks, as well as the corresponding checkpoints for the evaluation models related to each individual experiment.
 
 <!-- --------------------------------------------------------------- -->
 ## Training
