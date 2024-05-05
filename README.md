@@ -182,3 +182,8 @@ In the bash scripts for training each method, enable `--dump_fake_for_NIQE --niq
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
 ## Acknowledge
+- https://github.com/lucidrains/denoising-diffusion-pytorch
+- https://github.com/lucidrains/classifier-free-guidance-pytorch
+- https://github.com/POSTECH-CVLab/PyTorch-StudioGAN
+- https://github.com/openai/guided-diffusion
+- 
