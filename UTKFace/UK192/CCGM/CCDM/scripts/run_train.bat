@@ -17,11 +17,11 @@ python main.py ^
     --pred_objective pred_x0 ^
     --model_channels 32 --num_res_blocks 4 --num_groups 8 --cond_drop_prob 0.1 ^
     --attention_resolutions 24_48_96 --channel_mult 1_2_4_4_8_8 ^
-    --niters 500000 --resume_niter 0 --train_lr 1e-4 --train_timesteps 1000 ^
+    --niters 800000 --resume_niter 0 --train_lr 1e-4 --train_timesteps 1000 ^
     --train_batch_size 48 --gradient_accumulate_every 2 --train_amp ^
     --kernel_sigma %SIGMA% --threshold_type hard --kappa %KAPPA% ^
     --sample_every 20000 --save_every 10000 ^
-    --sample_timesteps 100 --sample_cond_scale 1.5 ^
+    --sample_timesteps 100 --sample_cond_scale 2.0 ^
     --comp_FID --nfake_per_label 1000 --sampler ddim --samp_batch_size 100 --eval_batch_size 100 ^
     --dump_fake_data ^ %*
     @REM --dump_fake_for_NIQE --niqe_dump_path %NIQE_PATH%
