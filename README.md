@@ -87,7 +87,7 @@ Here, we provide a list of crucial software environments and python packages emp
 We use the preprocessed datasets provided by [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
 
 ### The RC-49 Dataset (h5 file)
-Download the following h5 files and put them in `./datasets/RC-49`.
+Download the following h5 file and put it in `./datasets/RC-49`.
 #### RC-49 (64x64)
 [RC-49_64x64_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstI0OuDMqpEZA80tRQ?e=fJJbWw) <br />
 [RC-49_64x64_BaiduYun_link](https://pan.baidu.com/s/1Odd02zraZI0XuqIj5UyOAw?pwd=bzjf) <br />
@@ -114,13 +114,13 @@ Download the following h5 files and put them in `./datasets/SteeringAngle`.
 [SteeringAngle_128x128_BaiduYun_link](https://pan.baidu.com/s/1JVBccsr5vgsIdzC-uskx-A?pwd=4z5n) <br />
 
 ### The Cell-200 Dataset (h5 file)
-Download the following h5 files and put them in `./datasets/Cell-200`.
+Download the following h5 file and put it in `./datasets/Cell-200`.
 #### Cell-200 (64x64)
 [Cell-200_64x64_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstIt73ZfGOAjBMiTmQ?e=cvxFIN) <br />
 [Cell-200_64x64_BaiduYun_link](https://pan.baidu.com/s/1wkXUT6XUfLpKZ_D9fAg__w?pwd=v2r1) <br />
 
 ### The UTKFace-Wild Dataset (h5 file)
-Download the following h5 files and put them in `./datasets/UTKFace-Wild`.
+Download the following h5 file and put it in `./datasets/UTKFace-Wild`.
 #### UTKFace-Wild (256x256)
 [UKW256_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQvNIcEZIlU4y4aLT5Lg?e=4JPBDE) <br />
 [UKW256_BaiduYun_link](https://pan.baidu.com/s/1ihNxXeBPbttb4_VQiEPk5A?pwd=2y5h) <br />
