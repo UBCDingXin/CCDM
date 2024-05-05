@@ -186,4 +186,3 @@ In the bash scripts for training each method, enable `--dump_fake_for_NIQE --niq
 - https://github.com/lucidrains/classifier-free-guidance-pytorch
 - https://github.com/POSTECH-CVLab/PyTorch-StudioGAN
 - https://github.com/openai/guided-diffusion
-- 
