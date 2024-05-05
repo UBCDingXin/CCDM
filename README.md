@@ -168,7 +168,7 @@ Go to the directory `./UTKFace_Wild/UKW256/CCGM/CCDM`. Run the training script `
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
-## 4. Sampling and Evaluation
+## Sampling and Evaluation
 <!------------------------------------>
 ### (1) SFID, Diversity, and Label Score
 For all methods except ReACGAN and ADCGAN, after the training, the evaluation usually automatically starts. The evaluation setups are consistent with [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
