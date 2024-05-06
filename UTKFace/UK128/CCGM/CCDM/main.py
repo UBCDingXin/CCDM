@@ -483,23 +483,7 @@ if args.comp_FID:
     fake_images = np.concatenate(fake_images, axis=0)
     fake_labels = np.concatenate(fake_labels)
     print("Sampling finished; Time elapses: {}s".format(total_sample_time))
-
-
-    # ## dump fake images for visualization
-    # sel_labels = np.array([1, 40, 60])
-    # n_per_label = 6
-    # images_show = []
-    # for i in range(len(sel_labels)):
-    #     curr_label = sel_labels[i]
-    #     indx_i = np.where(np.abs(fake_labels-curr_label)<1e-6)[0]
-    #     np.random.shuffle(indx_i)
-    #     indx_i = indx_i[0:n_per_label]
-    #     images_show.append(fake_images[indx_i])
-    # images_show = np.concatenate(images_show, axis=0)
-    # images_show = torch.from_numpy(images_show/255.0)
-    # filename_images_show = save_results_folder + '/visualization_images_grid.png'
-    # save_image(images_show.data, filename_images_show, nrow=n_per_label, normalize=True)
-    # sys.exit()
+    
 
     ### dump for computing NIQE
     if args.dump_fake_for_NIQE:
