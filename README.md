@@ -119,12 +119,6 @@ Download the following h5 file and put it in `./datasets/Cell-200`.
 [Cell-200_64x64_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstIt73ZfGOAjBMiTmQ?e=cvxFIN) <br />
 [Cell-200_64x64_BaiduYun_link](https://pan.baidu.com/s/1wkXUT6XUfLpKZ_D9fAg__w?pwd=v2r1) <br />
 
-### The UTKFace-Wild Dataset (h5 file)
-Download the following h5 file and put it in `./datasets/UTKFace-Wild`.
-#### UTKFace-Wild (256x256)
-[UKW256_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQvNIcEZIlU4y4aLT5Lg?e=4JPBDE) <br />
-[UKW256_BaiduYun_link](https://pan.baidu.com/s/1ihNxXeBPbttb4_VQiEPk5A?pwd=2y5h) <br />
-
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
 ## Preparation
@@ -157,14 +151,8 @@ Go to the directory `./UTKFace/SA64/CCGM/CCDM`. Run the training script `./scrip
 ### (6) Steering Angle (128x128)
 Go to the directory `./UTKFace/SA128/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
-
 ### (7) Cell-200 (64x64)
 Go to the directory `./Cell-200/Cell-200_64x64/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
-
-
-### (8) UTKFace-Wild (256x256)
-Go to the directory `./UTKFace_Wild/UKW256/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
-
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------

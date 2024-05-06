@@ -470,54 +470,6 @@ if args.comp_FID:
     num_eval_labels = len(eval_labels)
     print(eval_labels)
 
-    # #####################
-    # ## dump fake images for visualization
-    # sel_labels = np.array([-0.6, 5.5, 45])
-
-    # dump_fake_images_folder = os.path.join(save_results_folder, 'fake_data_niters{}_nfake{}_{}_sampstep{}'.format(args.niters, int(args.nfake_per_label*num_eval_labels), args.sampler, args.sample_timesteps))
-    # os.makedirs(dump_fake_images_folder, exist_ok=True)
-    # fake_images = []
-    # fake_labels = []
-    # total_sample_time = 0
-    # sel_indx = 0
-    # for i in range(num_eval_labels):
-    #     print('\n [{}/{}]: Generating fake data for label {}...'.format(i+1, num_eval_labels, eval_labels[i]))
-    #     curr_label = eval_labels[i]
-    #     sel_label_cur = sel_labels[sel_indx]
-    #     if np.abs(curr_label-sel_label_cur)>1e-1:
-    #         continue
-    #     else:
-    #         sel_indx+=1
-    #     dump_fake_images_filename = os.path.join(dump_fake_images_folder, '{}.h5'.format(curr_label))
-    #     with h5py.File(dump_fake_images_filename, "r") as f:
-    #         fake_images_i = f['fake_images_i'][:]
-    #         fake_labels_i = f['fake_labels_i'][:]
-    #         sample_time_i = f['sample_time_i'][0]
-    #     assert len(fake_images_i) == len(fake_labels_i)
-    #     fake_images.append(fake_images_i)
-    #     fake_labels.append(fake_labels_i)
-    #     print("\r {}/{}: Got {} fake images for label {}. Time spent {:.2f}, Total time {:.2f}.".format(i+1, num_eval_labels, len(fake_images_i), curr_label, sample_time_i, total_sample_time))
-    #     if sel_indx>=len(sel_labels):
-    #         break
-    # ##end for i
-    # fake_images = np.concatenate(fake_images, axis=0)
-    # fake_labels = np.concatenate(fake_labels)
-
-    # n_per_label = 6
-    # images_show = []
-    # for i in range(len(sel_labels)):
-    #     curr_label = sel_labels[i]
-    #     indx_i = np.where(np.abs(fake_labels-curr_label)<=1e-1)[0]
-    #     np.random.shuffle(indx_i)
-    #     indx_i = indx_i[0:n_per_label]
-    #     images_show.append(fake_images[indx_i])
-    # images_show = np.concatenate(images_show, axis=0)
-    # images_show = torch.from_numpy(images_show/255.0)
-    # filename_images_show = save_results_folder + '/visualization_images_grid.png'
-    # save_image(images_show.data, filename_images_show, nrow=n_per_label, normalize=True)
-    # sys.exit()
-
-
 
 
     ###########################################
