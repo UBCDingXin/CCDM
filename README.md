@@ -1,12 +1,18 @@
-# The Code Repository for "CCDM: Continuous Conditional Diffusion Models for Image Generation"
-
+# The Code Repository for "[CCDM: Continuous Conditional Diffusion Models for Image Generation](https://arxiv.org/abs/2405.03546)"
 
 --------------------------------------------------------
 
 This repository provides the source codes for the experiments in our papers for CCDMs. <br />
 If you use this code, please cite
 ```text
-XXX
+@misc{ding2024ccdm,
+      title={{CCDM}: Continuous Conditional Diffusion Models for Image Generation}, 
+      author={Xin Ding and Yongwei Wang and Kao Zhang and Z. Jane Wang},
+      year={2024},
+      eprint={2405.03546},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 <!-- ----------------------------------------------------------------->
