@@ -140,32 +140,32 @@ Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) an
 Before running the experiment, navigate to the `./CCDM/CCDM_unifed` directory in your terminal. <br />
 
 ### (1) RC-49 (64x64)
-To execute the training process, run the script `./scripts/RC64/win/run_ccdm.bat` on Windows or `./scripts/RC64/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/RC64/win/run_ccdm.bat` on Windows or `./scripts/RC64/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
 
 Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (2) UTKFace (64x64)
-To execute the training process, run the script `./scripts/UK64/win/run_ccdm.bat` on Windows or `./scripts/UK64/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/UK64/win/run_ccdm.bat` on Windows or `./scripts/UK64/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
 
 Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (3) UTKFace (128x128)
-To execute the training process, run the script `./scripts/UK128/win/run_ccdm.bat` on Windows or `./scripts/UK128/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/UK128/win/run_ccdm.bat` on Windows or `./scripts/UK128/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
 
 Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (4) UTKFace (192x192)
-To execute the training process, run the script `./scripts/UK192/win/run_ccdm.bat` on Windows or `./scripts/UK192/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/UK192/win/run_ccdm.bat` on Windows or `./scripts/UK192/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
 
 Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (5) Steering Angle (64x64)
-To execute the training process, run the script `./scripts/SA64/win/run_ccdm.bat` on Windows or `./scripts/SA64/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/SA64/win/run_ccdm.bat` on Windows or `./scripts/SA64/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
 
 Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (6) Steering Angle (128x128)
-To execute the training process, run the script `./scripts/SA128/win/run_ccdm.bat` on Windows or `./scripts/SA128/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/SA128/win/run_ccdm.bat` on Windows or `./scripts/SA128/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
 
 Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
@@ -183,7 +183,7 @@ After the training, the sampling usually automatically starts. The evaluation se
 <!------------------------------------>
 ### (1) SFID, Diversity, and Label Score
 
-Navigate to the `./CCDM/evaluation/other_metrics/<DATA_NAME>/<metrics_??x??>` directory in your terminal, replacing `<DATA_NAME>` with the name of the corresponding dataset and `<metrics_??x??>` with the appropriate resolution.
+Navigate to the `./CCDM/evaluation/other_metrics/<DATA_NAME>/<metrics_??x??>` directory in your terminal, replacing `<DATA_NAME>` with the name of the corresponding dataset and `<metrics_??x??>` with the appropriate resolution. Execute `run_eval.bat` (Windows) or `run_eval.sh` (Linux) to begin the evaluation process. For each script, ensure the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `FAKE_DATA_PATH`, and `NIQE_PATH`.
 
 <!------------------------------------>
 ### (2) NIQE
