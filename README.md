@@ -1,5 +1,8 @@
 # The Code Repository for "[CCDM: Continuous Conditional Diffusion Models for Image Generation](https://arxiv.org/abs/2405.03546)"
 
+
+**[UPDATE! 2025-02-26]** We offer a unified code repository located at `./CCDM/CCDM_unified`, which supports CcDPM, CCDM, and DMD2-M. The original code repository, containing the initial version of CCDM, is now archived in `./CCDM/CCDM_vanilla`.   <br />
+
 --------------------------------------------------------
 
 This repository provides the source codes for the experiments in our papers for CCDMs. <br />
@@ -26,13 +29,10 @@ If you use this code, please cite
 
 <p align="center">
   <img src="images/overall_workflow.png">
-  The overall workflow of CCDMs. The training process entails adapting a modified U-Net using the proposed hard vicinal loss and integrating CcGANs' label embedding network, referred to as ILI. For the sampling process, a classifier-free guidance-based mechanism is employed to produce a linear combination of a conditional output and an unconditional output from the trained U-Net. A DDIM-based sampler is then used to generate new images based on this linear combination.
+  The overall workflow of CCDMs
 </p>
 
-<p align="center">
-  <img src="images/unet_architecture.png">
-  The network architecture of the denoising U-Net.
-</p>
+
 
 
 <!-- ----------------------------------------------------------------->
@@ -40,7 +40,7 @@ If you use this code, please cite
 ## Software Requirements
 Here, we provide a list of crucial software environments and python packages employed in the conducted experiments. Please note that we use different computational platforms for our experiments. <br />
 
-**For computing NIQE scores and implementing the NIQE filtering (Support both Windows and Linux):**
+**For computing NIQE scores (Support both Windows and Linux):**
 | Item | Version | Item | Version |
 |---|---|---|---|
 | OS | Win11 | OS | Linux |
@@ -127,8 +127,8 @@ Download the following h5 file and put it in `./datasets/Cell-200`.
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
-## Preparation
-Please download the zip file from either [OneDrive](https://1drv.ms/u/s!Arj2pETbYnWQvNIf4ZaawrD7v2Ugwg?e=G7uhKY) or [BaiduYun](https://pan.baidu.com/s/1Bb4SNQ183pkPSwftrDN0dQ?pwd=nj31) and extract its contents to the `./CCDM` directory. This zip archive includes the necessary checkpoints for the ILI's embedding networks, as well as the corresponding checkpoints for the evaluation models related to each individual experiment.
+## Preparation (Required!)
+Please download the zip file from either [OneDrive](https://1drv.ms/u/s!Arj2pETbYnWQvNIf4ZaawrD7v2Ugwg?e=G7uhKY) or [BaiduYun](https://pan.baidu.com/s/1KfyLWXSpaYClRSnXV0hjrQ?pwd=bdwp) and extract its contents into the `./CCDM` directory. The zip archive contains the required checkpoints for the ILI's embedding networks and covariance embedding networks, as well as the corresponding checkpoints for the evaluation models associated with each individual experiment.
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
@@ -137,40 +137,58 @@ Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) an
 
 *For simplicity, we only show how to implement the proposed **CCDM** in each experiment.* <br />
 
-### (1) RC-49 (64x64)
-Go to the directory `./RC-49/RC-49_64x64/CCGM/CCDM`. Run the training script `./scripts/run_train_ccdm.bat` for Windows or `./scripts/run_train_ccdm.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+Before running the experiment, navigate to the `./CCDM/CCDM_unifed` directory in your terminal. <br />
 
-Please note that we also provide the training scripts named `run_train_ccdpm.bat` and `run_train_ccdpm.sh` for implementing CcDPM on RC-49.
+### (1) RC-49 (64x64)
+To execute the training process, run the script `./scripts/RC64/win/run_ccdm.bat` on Windows or `./scripts/RC64/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+
+Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (2) UTKFace (64x64)
-Go to the directory `./UTKFace/UK64/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/UK64/win/run_ccdm.bat` on Windows or `./scripts/UK64/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+
+Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (3) UTKFace (128x128)
-Go to the directory `./UTKFace/UK128/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/UK128/win/run_ccdm.bat` on Windows or `./scripts/UK128/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+
+Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (4) UTKFace (192x192)
-Go to the directory `./UTKFace/UK192/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/UK192/win/run_ccdm.bat` on Windows or `./scripts/UK192/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+
+Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (5) Steering Angle (64x64)
-Go to the directory `./UTKFace/SA64/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/SA64/win/run_ccdm.bat` on Windows or `./scripts/SA64/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+
+Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (6) Steering Angle (128x128)
-Go to the directory `./UTKFace/SA128/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/SA128/win/run_ccdm.bat` on Windows or `./scripts/SA128/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+
+Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 ### (7) Cell-200 (64x64)
-Go to the directory `./Cell-200/Cell-200_64x64/CCGM/CCDM`. Run the training script `./scripts/run_train.bat` for Windows or `./scripts/run_train.sh` for Linux. Please correctly set `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+To execute the training process, run the script `./scripts/Cell/win/run_ccdm.bat` on Windows or `./scripts/Cell/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
+
+Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
 ## Sampling and Evaluation
+
+After the training, the sampling usually automatically starts. The evaluation setups are consistent with [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
+
 <!------------------------------------>
 ### (1) SFID, Diversity, and Label Score
-For all methods except ReACGAN and ADCGAN, after the training, the evaluation usually automatically starts. The evaluation setups are consistent with [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
+
+Navigate to the `./CCDM/evaluation/other_metrics/<DATA_NAME>/<metrics_??x??>` directory in your terminal, replacing `<DATA_NAME>` with the name of the corresponding dataset and `<metrics_??x??>` with the appropriate resolution.
 
 <!------------------------------------>
 ### (2) NIQE
-In the bash scripts for training each method, enable `--dump_fake_for_NIQE --niqe_dump_path <YOUR_NIQE_PATH>` to dump fake images for computing NIQE scores. Please note that you need set the `<YOUR_NIQE_PATH>` correctly. Fake images for computing NIQE are usually stored in `./CcGAN_TPAMI_NIQE/fake_data`. Run the batch script `run_test.bat` to computing the average NIQE scores. <br />
 
+In the bash scripts for training each method, enable the flags `--dump_fake_for_NIQE --niqe_dump_path <YOUR_NIQE_PATH>` to dump fake images for computing NIQE scores. Ensure that `<YOUR_NIQE_PATH>` is set correctly. Fake images for NIQE computation are typically stored in `./NIQE/<DATA_NAME>/NIQE_??x??/fake_data`, where `<DATA_NAME>` should be replaced with the corresponding dataset name and `<metrics_??x??>` with the appropriate resolution. To compute the average NIQE scores, execute the batch script `run_test.bat` (Windows) or `run_test.sh` (Linux). <br />
 
 
 <!-- --------------------------------------------------------------- -->
