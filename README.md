@@ -128,7 +128,7 @@ Download the following h5 file and put it in `./datasets/Cell-200`.
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
 ## Preparation (Required!)
-Please download the zip file from either [OneDrive](https://1drv.ms/u/s!Arj2pETbYnWQvNIf4ZaawrD7v2Ugwg?e=G7uhKY) or [BaiduYun](https://pan.baidu.com/s/1KfyLWXSpaYClRSnXV0hjrQ?pwd=bdwp) and extract its contents into the `./CCDM` directory. The zip archive contains the required checkpoints for the ILI's embedding networks and covariance embedding networks, as well as the corresponding checkpoints for the evaluation models associated with each individual experiment.
+Please download the zip file from either [OneDrive](https://1drv.ms/u/s!Arj2pETbYnWQvOQFAot2lzSWwOEgSQ?e=ZokUe5) or [BaiduYun](https://pan.baidu.com/s/1KfyLWXSpaYClRSnXV0hjrQ?pwd=bdwp) and extract its contents into the `./CCDM` directory. The zip archive contains the required checkpoints for the ILI's embedding networks and covariance embedding networks, as well as the corresponding checkpoints for the evaluation models associated with each individual experiment.
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
