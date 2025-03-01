@@ -1,7 +1,7 @@
 # The Code Repository for "[CCDM: Continuous Conditional Diffusion Models for Image Generation](https://arxiv.org/abs/2405.03546)"
 
 
-**[UPDATE! 2025-02-26]** We offer a unified code repository located at `./CCDM/CCDM_unified`, which supports training CcDPM, CCDM, and DMD2-M on RC-49, Cell-200, UTKFace, and Steering Angle. The original code repository, containing the initial version of CCDM, is now archived in `./CCDM/CCDM_vanilla`. Detailed training and sampling setups are documented in `./setup_details.pdf`.  <br />
+**[UPDATE! 2025-02-26]** We offer a unified code repository located at `./CCDM/CCDM_unified`, which supports training CcDPM, CCDM, and DMD2-M on RC-49, Cell-200, UTKFace, and Steering Angle. The original code repository, containing the initial version of CCDM, is now archived in `./CCDM/CCDM_vanilla`. Detailed training and sampling setups are documented in [`./setup_details.pdf`](https://github.com/UBCDingXin/CCDM/blob/main/setup_details.pdf).  <br />
 
 --------------------------------------------------------
 
