@@ -34,28 +34,24 @@ class LoadDataSet:
                 self.labels_all = hf['labels'][:].astype(float)
                 self.images_all = hf['images'][:]
                 self.indx_train = hf['indx_train'][:]
-                hf.close()
                 print("\n Loaded entire RC-49 dataset: {}x{}x{}x{}".format(self.images_all.shape[0], self.images_all.shape[1], self.images_all.shape[2], self.images_all.shape[3]))
 
             elif self.data_name == "UTKFace":
                 ## load h5 file
                 self.labels_all = hf['labels'][:].astype(float)
                 self.images_all = hf['images'][:]
-                hf.close()
                 print("\n Loaded entire UTKFace dataset: {}x{}x{}x{}".format(self.images_all.shape[0], self.images_all.shape[1], self.images_all.shape[2], self.images_all.shape[3]))
                 
             elif self.data_name == "Cell200":
                 ## load h5 file
                 self.labels_all = hf['CellCounts'][:].astype(float)
-                self.images_all = hf['IMGs_grey'][:]
-                hf.close()        
+                self.images_all = hf['IMGs_grey'][:]       
                 print("\n Loaded entire Cell200 dataset: {}x{}x{}x{}".format(self.images_all.shape[0], self.images_all.shape[1], self.images_all.shape[2], self.images_all.shape[3]))
             
             elif self.data_name == "SteeringAngle":
                 ## load h5 file
                 self.labels_all = hf['labels'][:].astype(float)
                 self.images_all = hf['images'][:]
-                hf.close()
                 print("\n Loaded entire SteeringAngle dataset: {}x{}x{}x{}".format(self.images_all.shape[0], self.images_all.shape[1], self.images_all.shape[2], self.images_all.shape[3]))
                 
             else:
