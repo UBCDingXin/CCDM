@@ -28,6 +28,6 @@ python main.py \
     --kernel_sigma $SIGMA --threshold_type $TYPE --kappa $KAPPA \
     --sample_every 10000 --save_every 10000 \
     --sample_timesteps 250 --sample_cond_scale 1.5 \
-    --sampler ddim --samp_batch_size 200 --nfake_per_label 50 \
+    --sampler ddim --samp_batch_size 50 --nfake_per_label 50 \
     --dump_fake_data \
     2>&1 | tee output_${DATA_NAME}_${IMG_SIZE}_${SETTING}.txt

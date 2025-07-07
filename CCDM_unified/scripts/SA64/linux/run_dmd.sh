@@ -34,6 +34,6 @@ python dmd.py \
     --weight_guidance_adv 2.0 --weight_generator_adv 0.2 \
     --gan_DiffAugment \
     --sample_every 10000 --save_every 10000 \
-    --samp_batch_size 200 --nfake_per_label 50 \
+    --samp_batch_size 50 --nfake_per_label 50 \
     --dump_fake_data \
     2>&1 | tee output_${DATA_NAME}_${IMG_SIZE}_${SETTING}.txt
