@@ -7,10 +7,8 @@ export CUDA_VISIBLE_DEVICES=0
 DATA_NAME="RC-49"
 IMG_SIZE=64
 
-# ROOT_PATH="<YOUR_PATH>/CCDM/CCDM_unified"
-# DATA_PATH="<YOUR_PATH>/datasets/${DATA_NAME}"
-ROOT_PATH="/home/xin/WD/CCGM/CCDM_improved/CCDM_unified"
-DATA_PATH="/home/xin/WD/datasets/CCGM_or_regression/${DATA_NAME}"
+ROOT_PATH="<YOUR_PATH>/CCDM/CCDM_unified"
+DATA_PATH="<YOUR_PATH>/datasets/${DATA_NAME}"
 TEACHER_PATH="${ROOT_PATH}/output/RC-49_64/Setup_CCDM/results"
 
 SETTING="Setup_DMD2M"
@@ -22,7 +20,7 @@ python dmd.py \
     --setting_name $SETTING \
     --root_path $ROOT_PATH --data_name $DATA_NAME --data_path $DATA_PATH \
     --image_size $IMG_SIZE --train_amp \
-    --min_label 0 --max_label 90.0 \
+    --min_label 0 --max_label 90.0 --max_num_img_per_label 25 \
     --y2h_embed_type "resnet" --y2cov_embed_type "resnet" --use_Hy \
     --teacher_ckpt_path $TEACHER_PATH --niters_t 50000 \
     --model_channels 64 --cond_drop_prob 0  --channel_mult 1_2_2_4_8 \
