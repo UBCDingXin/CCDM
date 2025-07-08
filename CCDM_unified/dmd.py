@@ -136,7 +136,7 @@ print("\r Kappa:{:.4f}".format(args.kappa))
 
 if args.data_name == "UTKFace":
     dataset_embed = LoadDataSet(data_name=args.data_name, data_path=args.data_path, min_label=args.min_label, max_label=args.max_label, img_size=args.image_size, max_num_img_per_label=1e30, num_img_per_label_after_replica=200)
-elif args.data_name == "Cell200":
+elif args.data_name in ["Cell200", "RC-49"]:
     dataset_embed = LoadDataSet(data_name=args.data_name, data_path=args.data_path, min_label=args.min_label, max_label=args.max_label, img_size=args.image_size, max_num_img_per_label=args.max_num_img_per_label, num_img_per_label_after_replica=0)
 else:
     dataset_embed = LoadDataSet(data_name=args.data_name, data_path=args.data_path, min_label=args.min_label, max_label=args.max_label, img_size=args.image_size, max_num_img_per_label=1e30, num_img_per_label_after_replica=0)
