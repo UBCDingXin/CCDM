@@ -291,7 +291,7 @@ class Trainer(object):
 
                 if self.step%500==0:
                     with open(log_filename, 'a') as file:
-                        file.write("\r Step: {}, Loss: {:.4f}.".format(self.step, total_loss))
+                        file.write("\n Step: {}, Loss: {:.4f}.".format(self.step, total_loss))
 
                 accelerator.wait_for_everyone()
 
