@@ -9,7 +9,7 @@ def parse_opts():
     parser.add_argument('--data_path', type=str, default='./')
     parser.add_argument('--torch_model_path', type=str, default='None')
     parser.add_argument('--eval_ckpt_path', type=str, default='./')
-    parser.add_argument('--seed', type=int, default=111, metavar='S', help='random seed')
+    parser.add_argument('--seed', type=int, default=123456789, metavar='S', help='random seed')
     parser.add_argument('--num_workers', type=int, default=0)
     parser.add_argument('--setting_name', type=str, default='Setup1')
 
@@ -99,7 +99,7 @@ def parse_opts_dmd2():
     parser.add_argument('--root_path', type=str, default='./')
     parser.add_argument('--data_name', type=str, default='UTKFace', choices=["UTKFace", "RC-49", "Cell200", "SteeringAngle"])
     parser.add_argument('--data_path', type=str, default='./')
-    parser.add_argument('--seed', type=int, default=0, help='random seed')
+    parser.add_argument('--seed', type=int, default=123456, help='random seed')
     parser.add_argument('--num_workers', type=int, default=0)
 
     ''' Dataset '''
