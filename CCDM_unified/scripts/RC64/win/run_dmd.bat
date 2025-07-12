@@ -4,11 +4,9 @@ set CUDA_VISIBLE_DEVICES=0
 
 set DATA_NAME="RC-49"
 
-@REM set ROOT_PATH=<YOUR_PATH>/CCDM/CCDM_unified
-@REM set DATA_PATH=<YOUR_PATH>/datasets/%DATA_NAME%
-set ROOT_PATH=D:/local_wd/CCDM_improved/CCDM_unified
-set DATA_PATH=C:/Users/DX/BaiduSyncdisk/Baidu_WD/datasets/CCGM_or_regression/%DATA_NAME%
-set TEACHER_PATH=D:/local_wd/CCDM_improved/CCDM_unified/output/RC-49_64/Setup_CCDM/results
+set ROOT_PATH=<YOUR_PATH>/CCDM/CCDM_unified
+set DATA_PATH=<YOUR_PATH>/datasets/%DATA_NAME%
+set TEACHER_PATH=%ROOT_PATH%/output/RC-49_64/Setup_CCDM/results
 
 set SETTING="Setup_DMD2M"
 set SIGMA=-1.0
