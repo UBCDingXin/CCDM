@@ -1,6 +1,8 @@
 # The Code Repository for "[CCDM: Continuous Conditional Diffusion Models for Image Generation](https://arxiv.org/abs/2405.03546)"
 
 
+**[UPDATE! 2025-07-13]** We corrected a coding error that inadvertently allowed CCDM and CcDPM to utilize additional training samples on RC-49, though fortunately our primary conclusion about CCDM's substantial superiority remains unchanged. <br />
+
 **[UPDATE! 2025-02-26]** We offer a unified code repository located at `./CCDM/CCDM_unified`, which supports training CcDPM, CCDM, and DMD2-M on RC-49, Cell-200, UTKFace, and Steering Angle. The original code repository, containing the initial version of CCDM, is now archived in `./CCDM/CCDM_vanilla`. Detailed training and sampling setups are documented in [`./setup_details.pdf`](https://github.com/UBCDingXin/CCDM/blob/main/setup_details.pdf).  <br />
 
 --------------------------------------------------------
@@ -46,7 +48,6 @@ Here, we provide a list of crucial software environments and python packages emp
 | OS | Win11 | OS | Linux |
 | Python | 3.11.3 | Python | 3.10.12 |
 | Matlab | 2023a | Matlab | 2021b |
-
 
 **For implementing CCDM (Support both Windows and Linux):**
 | Item | Version | Item | Version |
@@ -173,6 +174,12 @@ Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windo
 To execute the training process, run the script `./scripts/Cell/win/run_ccdm.bat` on Windows or `./scripts/Cell/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
 
 Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
+
+### (8) Finetuning Stable Diffusion v1.5
+
+We fine-tuned [Stable Diffusion v1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5) using Hugging Face's official checkpoint on both RC-49 and UTKFace. During fine-tuning, all training images were resized to 512×512 to match the model's native resolution. 
+
+For RC-49, we trained the model for 5 epochs with a batch size of 4 and learning rate 1e-5, subsequently resizing generated images to 64×64 for evaluation. On UTKFace (192×192), we conducted 6 epochs of training with identical batch size and learning rate, then evaluated generated images at three resolutions: 64×64, 128×128, and 192×192. 
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------

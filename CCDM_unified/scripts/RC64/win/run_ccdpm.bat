@@ -18,7 +18,7 @@ python main.py ^
     --setting_name %SETTING% ^
     --root_path %ROOT_PATH% --data_name %DATA_NAME% --data_path %DATA_PATH% ^
     --image_size 64 --train_amp ^
-    --min_label 0 --max_label 90.0 ^
+    --min_label 0 --max_label 90.0 --max_num_img_per_label 25 ^
     --pred_objective pred_noise ^
     --model_channels 64 --cond_drop_prob 0.1  --channel_mult 1_2_2_4_8 ^
     --y2h_embed_type "resnet" ^
