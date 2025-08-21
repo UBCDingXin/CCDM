@@ -1,5 +1,6 @@
 # The Code Repository for "[CCDM: Continuous Conditional Diffusion Models for Image Generation](https://arxiv.org/abs/2405.03546)"
 
+**[UPDATE! 2025-08-18]** CCDM has been accepted by IEEE Transactions on Multimedia. <br />
 
 **[UPDATE! 2025-07-13]** We corrected a coding error that inadvertently allowed CCDM and CcDPM to utilize additional training samples on RC-49, though fortunately our primary conclusion about CCDM's substantial superiority remains unchanged. <br />
 
