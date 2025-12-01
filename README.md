@@ -1,14 +1,12 @@
-# [CCDM: Continuous Conditional Diffusion Models for Image Generation](https://arxiv.org/abs/2405.03546)
+# Continuous Conditional Diffusion Models for Image Generation
 
 **[UPDATE! 2025-08-18]** CCDM has been accepted by IEEE Transactions on Multimedia. <br />
 
 **[UPDATE! 2025-07-13]** We corrected a coding error that inadvertently allowed CCDM and CcDPM to utilize additional training samples on RC-49, though fortunately our primary conclusion about CCDM's substantial superiority remains unchanged. <br />
 
-**[UPDATE! 2025-02-26]** We offer a unified code repository located at `./CCDM/CCDM_unified`, which supports training CcDPM, CCDM, and DMD2-M on RC-49, Cell-200, UTKFace, and Steering Angle. The original code repository, containing the initial version of CCDM, is now archived in `./CCDM/CCDM_vanilla`. Detailed training and sampling setups are documented in [`./setup_details.pdf`](https://github.com/UBCDingXin/CCDM/blob/main/setup_details.pdf).  <br />
+**[UPDATE! 2025-02-26]** We offer a unified code repository located at `./CCDM/CCDM_unified`, which supports training CcDPM, CCDM, and DMD2-M. The original code repository, containing the initial version of CCDM and some other compared methods, is now archived in `./CCDM/CCDM_vanilla`. <br />
 
 --------------------------------------------------------
-
-This repository provides the source codes for the experiments in our papers for CCDMs. <br />
 If you use this code, please cite
 ```text
 @misc{ding2024ccdm,
@@ -19,74 +17,8 @@ If you use this code, please cite
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
+
 ```
-
-<!-- ----------------------------------------------------------------->
---------------------------------------------------------
-## Some Illustrative Figures
-
-<p align="center">
-  <img src="images/illustration_CCGM.png">
-  Illustration of the CCGM task with sample images from the UTKFace and Steering Angle datasets.
-</p>
-
-<p align="center">
-  <img src="images/overall_workflow.png">
-  The overall workflow of CCDMs
-</p>
-
-
-
-
-<!-- ----------------------------------------------------------------->
---------------------------------------------------------
-## Software Requirements
-Here, we provide a list of crucial software environments and python packages employed in the conducted experiments. Please note that we use different computational platforms for our experiments. <br />
-
-**For computing NIQE scores (Support both Windows and Linux):**
-| Item | Version | Item | Version |
-|---|---|---|---|
-| OS | Win11 | OS | Linux |
-| Python | 3.11.3 | Python | 3.10.12 |
-| Matlab | 2023a | Matlab | 2021b |
-
-**For implementing CCDM (Support both Windows and Linux):**
-| Item | Version | Item | Version |
-|---|---| ---|---|
-| OS | Win11 | OS | Linux |
-| Python | 3.11.3 | Python | 3.10.12 |
-| CUDA  | 11.8 | CUDA  | 12.1 |
-| numpy | 1.23.5 | numpy | 1.26.4 |
-| torch | 2.0.1 | torch | 2.2.1 |
-| torchvision | 0.15.2 | torchvision | 0.17.1 |
-| Pillow | 9.5.0 | Pillow | 9.0.1 |
-| accelearate | 0.20.3 | accelearate | 0.27.2 |
-
-**For implementing ReACGAN, ADCGAN, ADM-G, and CFG (Support Windows):**
-| Item | Version |
-|---|---|
-| OS | Win11 |
-| Python | 3.11.3 |
-| CUDA  | 11.8 |
-| numpy | 1.23.5 |
-| torch | 2.0.1 |
-| torchvision | 0.15.2 |
-| Pillow | 9.5.0 |
-| accelearate | 0.20.3 |
-| wandb | 0.15.7 |
-
-**For implementing CcGAN and Dual-NDA (Support Linux):**
-| Item | Version |
-|---|---|
-| OS | Linux |
-| Python | 3.9 |
-| CUDA  | 11.4 |
-| numpy | 1.23.0 |
-| torch | 1.12.1 |
-| torchvision | 0.13.1 |
-| Pillow | 8.4.0 |
-| accelearate | 0.18.0 |
-
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
