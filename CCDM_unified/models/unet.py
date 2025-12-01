@@ -398,15 +398,13 @@ class Unet(nn.Module):
 
         if cond_drop_prob > 0:
             
-            if keep_mask is not None and cond_drop_prob is None: # if keep_mask is given use this given mask
-                self.keep_mask = keep_mask
-            else:
-                self.keep_mask = prob_mask_like((batch,), 1 - cond_drop_prob, device = device)               
+            if keep_mask is None:
+                keep_mask = prob_mask_like((batch,), 1 - cond_drop_prob, device = device)             
                 
             null_cond_emb = repeat(self.null_cond_emb, 'd -> b d', b = batch)
 
             c_emb = torch.where(
-                rearrange(self.keep_mask, 'b -> b 1'),
+                rearrange(keep_mask, 'b -> b 1'),
                 c_emb,
                 null_cond_emb
             )

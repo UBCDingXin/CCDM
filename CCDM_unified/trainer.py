@@ -277,7 +277,7 @@ class Trainer(object):
 
                         ## define loss
                         with self.accelerator.autocast():
-                            loss = self.model(batch_images, labels_emb = fn_y2h(batch_labels), labels = batch_labels, vicinal_weights = vicinal_weights)
+                            loss = self.model(batch_images, labels_emb = fn_y2h(batch_target_labels), labels = batch_target_labels, vicinal_weights = vicinal_weights)
                             loss = loss / self.gradient_accumulate_every
                             total_loss += loss.item()
                 
