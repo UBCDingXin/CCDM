@@ -28,6 +28,13 @@ If you use this code, please cite
 ```
 
 --------------------------------------------------------
+<p align="center">
+  <img src="images/scatter_sfid_vs_speed_sa64.png">
+  Comparison of Sliding FID versus Sampling Speed Across Three Model Families on the Steering Angle Dataset ($64\times64$). The size of each scatter point represents GPU memory usage during sampling. Arrows ($\downarrow$ or $\uparrow$) indicate whether lower or higher values are preferred. Text-to-image diffusion models are fine-tuned from officially released checkpoints using either full fine-tuning or LoRA, while all other methods are trained from scratch.
+</p>
+
+
+--------------------------------------------------------
 ## Datasets
 #### RC-49 (64x64)
 [RC-49_64x64_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstI0OuDMqpEZA80tRQ?e=fJJbWw) <br />
