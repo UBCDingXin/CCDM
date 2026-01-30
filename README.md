@@ -2,12 +2,6 @@
 
 **[UPDATE! 2026-02-01]** We have released the improved CCDM (iCCDM) at `./CCDM/iCCDM`, designed based on the [EDM](https://github.com/NVlabs/edm) framework to replace the initial CCDM. <br />
 
-**[UPDATE! 2025-08-18]** CCDM has been accepted by IEEE Transactions on Multimedia. <br />
-
-**[UPDATE! 2025-07-13]** We corrected a coding error that inadvertently allowed CCDM and CcDPM to utilize additional training samples on RC-49, though fortunately our primary conclusion about CCDM's substantial superiority remains unchanged. <br />
-
-**[UPDATE! 2025-02-26]** We offer a unified code repository located at `./CCDM/CCDM_unified`, which supports training CcDPM, CCDM, and DMD2-M. The original code repository, containing the initial version of CCDM and some other compared methods, is now archived in `./CCDM/CCDM_vanilla`. <br />
-
 --------------------------------------------------------
 If you use this code, please cite
 ```text
