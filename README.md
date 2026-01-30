@@ -1,6 +1,7 @@
 # Diffusion-based Quantitatively Controllable Image Generation
 ## The official implementation of CCDM and iCCDM.
 
+--------------------------------------------------------
 **[UPDATE! 2026-02-01]** We have released the improved CCDM (iCCDM) at `./CCDM/iCCDM`, designed based on the [EDM](https://github.com/NVlabs/edm) framework to replace the initial CCDM. <br />
 
 --------------------------------------------------------
