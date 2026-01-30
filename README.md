@@ -1,4 +1,4 @@
-# Continuous Conditional Diffusion Models for Image Generation
+# Continuous Conditional Diffusion Models for Quantitatively Controllable Image Generation
 
 **[UPDATE! 2026-02-01]** We have released the improved CCDM (iCCDM) at `./CCDM/iCCDM`, designed based on the [EDM](https://github.com/NVlabs/edm) framework to replace the initial CCDM. <br />
 
