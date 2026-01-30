@@ -1,5 +1,7 @@
 # Continuous Conditional Diffusion Models for Image Generation
 
+**[UPDATE! 2026-02-01]** We have released the improved CCDM (iCCDM) at `./CCDM/iCCDM`, designed to replace the initial CCDM. <br />
+
 **[UPDATE! 2025-08-18]** CCDM has been accepted by IEEE Transactions on Multimedia. <br />
 
 **[UPDATE! 2025-07-13]** We corrected a coding error that inadvertently allowed CCDM and CcDPM to utilize additional training samples on RC-49, though fortunately our primary conclusion about CCDM's substantial superiority remains unchanged. <br />
@@ -9,6 +11,16 @@
 --------------------------------------------------------
 If you use this code, please cite
 ```text
+
+@misc{ding2026ccdm,
+      title={Enhancing Diffusion-Based Quantitatively Controllable Image Generation via Matrix-Form EDM and Adaptive Vicinal Training}, 
+      author={Xin Ding and Yun Chen and Sen Zhang and Kao Zhang and Nenglun Chen and Peibei Cao and Yongwei Wang and Fei Wu},
+      year={2026},
+      eprint={26XX.XXXX},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
 @misc{ding2024ccdm,
       title={{CCDM}: Continuous Conditional Diffusion Models for Image Generation}, 
       author={Xin Ding and Yongwei Wang and Kao Zhang and Z. Jane Wang},
@@ -20,20 +32,17 @@ If you use this code, please cite
 
 ```
 
-<!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
 ## Datasets
-
-We use the preprocessed datasets provided by [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
-
-### The RC-49 Dataset (h5 file)
-Download the following h5 file and put it in `./datasets/RC-49`.
 #### RC-49 (64x64)
 [RC-49_64x64_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstI0OuDMqpEZA80tRQ?e=fJJbWw) <br />
 [RC-49_64x64_BaiduYun_link](https://pan.baidu.com/s/1Odd02zraZI0XuqIj5UyOAw?pwd=bzjf) <br />
 
+#### RC-49-I (64x64)
+[RC-49-I_64x64_OneDrive_link](https://1drv.ms/u/c/907562db44a4f6b8/EbJrU1Vc_p9BjgSOeKS8QUgBOZLbGTBsnShRGLXlRC516g?e=scNBPW) <br />
+[RC-49-I_64x64_BaiduYun_link](https://pan.baidu.com/s/1DgVy_AdQgFVVRbmTleggrQ?pwd=qfud) <br />
+
 ### The preprocessed UTKFace Dataset (h5 file)
-Download the following h5 files and put them in `./datasets/UTKFace`.
 #### UTKFace (64x64)
 [UTKFace_64x64_Onedrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstIzurW-LCFpGz5D7Q?e=X23ybx) <br />
 [UTKFace_64x64_BaiduYun_link](https://pan.baidu.com/s/1fYjxmD3tJG6QKw5jjXxqIg?pwd=ocmi) <br />
@@ -43,98 +52,50 @@ Download the following h5 files and put them in `./datasets/UTKFace`.
 #### UTKFace (192x192)
 [UTKFace_192x192_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstY8hLN3lWEyX0lNLA?e=BcjUQh) <br />
 [UTKFace_192x192_BaiduYun_link](https://pan.baidu.com/s/1KaT_k21GTdLqqJxUi24f-Q?pwd=4yf1) <br />
+#### UTKFace (256x256)
+[UTKFace_256x256_OneDrive_link](https://1drv.ms/u/c/907562db44a4f6b8/EaWxQlfC3nVFlxnLDPRIjLkB5i9t6UYXHG40E0Ms2u0ZvQ?e=xL6MuJ) <br />
+[UTKFace_256x256_BaiduYun_link](https://pan.baidu.com/s/1uX-_kafmGVc-1Ox_HNfAxg?pwd=wuvm) <br />
 
 ### The Steering Angle dataset (h5 file)
-Download the following h5 files and put them in `./datasets/SteeringAngle`.
 #### Steering Angle (64x64)
 [SteeringAngle_64x64_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstIyDTDpGA0CNiONkA?e=Ui5kUK) <br />
 [SteeringAngle_64x64_BaiduYun_link](https://pan.baidu.com/s/1ekpMJLC0mE08zVJp5GpFHQ?pwd=xucg) <br />
 #### Steering Angle (128x128)
 [SteeringAngle_128x128_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstJ0j7rXhDtm6y4IcA?e=bLQh2e) <br />
 [SteeringAngle_128x128_BaiduYun_link](https://pan.baidu.com/s/1JVBccsr5vgsIdzC-uskx-A?pwd=4z5n) <br />
+#### Steering Angle (256x256)
+[SteeringAngle_256x256_OneDrive_link](https://1drv.ms/u/c/907562db44a4f6b8/Ed29A3YeV4NMjo-4qSFS8G0BlQpMUB4D0V_xNin8KpQIVQ?e=Ijztt6) <br />
+[SteeringAngle_256x256_BaiduYun_link](https://pan.baidu.com/s/1bSQO7c47F0fIlEhmQ95poA?pwd=mkxz) <br />
 
-### The Cell-200 Dataset (h5 file)
-Download the following h5 file and put it in `./datasets/Cell-200`.
-#### Cell-200 (64x64)
-[Cell-200_64x64_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstIt73ZfGOAjBMiTmQ?e=cvxFIN) <br />
-[Cell-200_64x64_BaiduYun_link](https://pan.baidu.com/s/1wkXUT6XUfLpKZ_D9fAg__w?pwd=v2r1) <br />
-
-<!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
 ## Preparation (Required!)
-Please download the zip file from either [OneDrive](https://1drv.ms/u/s!Arj2pETbYnWQvOQFAot2lzSWwOEgSQ?e=ZokUe5) or [BaiduYun](https://pan.baidu.com/s/1KfyLWXSpaYClRSnXV0hjrQ?pwd=bdwp) and extract its contents into the `./CCDM` directory. The zip archive contains the required checkpoints for the ILI's embedding networks and covariance embedding networks, as well as the corresponding checkpoints for the evaluation models associated with each individual experiment.
+Download the evaluation checkpoints (zip file) from [OneDrive](https://1drv.ms/u/c/907562db44a4f6b8/EZQMkKev3alAh2gsqWx01zABDdJCLVKWTal-vjc_uwk2vA?e=Bbnu65) or [BaiduYun](https://pan.baidu.com/s/1wbN5_0CZTe1Ko3KwTWiwIg?pwd=mptb), then extract the contents to `./CCDM/iCCDM/evaluation/eval_ckpts`.
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
-## Training
-Following [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN) and [Ding et. al. (2024)](https://github.com/UBCDingXin/Dual-NDA), distinct training codes have been provided for various datasets. <br />
+## Example Usage
 
-*For simplicity, we only show how to implement the proposed **CCDM** in each experiment.* <br />
-
-Before running the experiment, navigate to the `./CCDM/CCDM_unifed` directory in your terminal. <br />
-
-### (1) RC-49 (64x64)
-To execute the training process, run the script `./scripts/RC64/win/run_ccdm.bat` on Windows or `./scripts/RC64/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
-
-Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
-
-### (2) UTKFace (64x64)
-To execute the training process, run the script `./scripts/UK64/win/run_ccdm.bat` on Windows or `./scripts/UK64/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
-
-Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
-
-### (3) UTKFace (128x128)
-To execute the training process, run the script `./scripts/UK128/win/run_ccdm.bat` on Windows or `./scripts/UK128/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
-
-Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
-
-### (4) UTKFace (192x192)
-To execute the training process, run the script `./scripts/UK192/win/run_ccdm.bat` on Windows or `./scripts/UK192/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
-
-Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
-
-### (5) Steering Angle (64x64)
-To execute the training process, run the script `./scripts/SA64/win/run_ccdm.bat` on Windows or `./scripts/SA64/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
-
-Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
-
-### (6) Steering Angle (128x128)
-To execute the training process, run the script `./scripts/SA128/win/run_ccdm.bat` on Windows or `./scripts/SA128/linux/run_ccdm.sh` on Linux. Make sure to correctly configure the following path: `YOUR_PATH`.
-
-Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
-
-### (7) Cell-200 (64x64)
-To execute the training process, run the script `./scripts/Cell/win/run_ccdm.bat` on Windows or `./scripts/Cell/linux/run_ccdm.sh` on Linux. Ensure that the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `EVAL_PATH`, and `NIQE_PATH`.
-
-Additionally, we provide training scripts for CcDPM, named `run_ccdpm.bat`(Windows) and `run_ccdpm.sh` (Linux), as well as scripts for DMD2-M, named `run_dmd.bat` (Windows) and `run_dmd.sh` (Linux).
-
-### (8) Finetuning Stable Diffusion v1.5
-
-We fine-tuned [Stable Diffusion v1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5) using Hugging Face's official checkpoint on both RC-49 and UTKFace. During fine-tuning, all training images were resized to 512×512 to match the model's native resolution. 
-
-For RC-49, we trained the model for 5 epochs with a batch size of 4 and learning rate 1e-5, subsequently resizing generated images to 64×64 for evaluation. On UTKFace (192×192), we conducted 6 epochs of training with identical batch size and learning rate, then evaluated generated images at three resolutions: 64×64, 128×128, and 192×192. 
+We provide the `.sh` file for training on each dataset in `./CCDM/iCCDM/config`. Ensure the root path and data path are correctly configured.
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
 ## Sampling and Evaluation
 
-After the training, the sampling usually automatically starts. The evaluation setups are consistent with [Ding et. al. (2023)](https://github.com/UBCDingXin/improved_CcGAN).
+After the training, the sampling usually automatically starts. The evaluation setups are consistent with [Ding et. al. (2025)](https://github.com/UBCDingXin/CcGAN-AVAR).
 
 <!------------------------------------>
 ### (1) SFID, Diversity, and Label Score
-
-Navigate to the `./CCDM/evaluation/other_metrics/<DATA_NAME>/<metrics_??x??>` directory in your terminal, replacing `<DATA_NAME>` with the name of the corresponding dataset and `<metrics_??x??>` with the appropriate resolution. Execute `run_eval.bat` (Windows) or `run_eval.sh` (Linux) to begin the evaluation process. For each script, ensure the following paths are correctly configured: `ROOT_PATH`, `DATA_PATH`, `FAKE_DATA_PATH`, and `NIQE_PATH`.
+After the training, the sampling usually automatically starts. Ensure that the `--do_eval` flag is enabled. 
 
 <!------------------------------------>
 ### (2) NIQE
-
-In the bash scripts for training each method, enable the flags `--dump_fake_for_NIQE --niqe_dump_path <YOUR_NIQE_PATH>` to dump fake images for computing NIQE scores. Ensure that `<YOUR_NIQE_PATH>` is set correctly. Fake images for NIQE computation are typically stored in `./NIQE/<DATA_NAME>/NIQE_??x??/fake_data`, where `<DATA_NAME>` should be replaced with the corresponding dataset name and `<metrics_??x??>` with the appropriate resolution. To compute the average NIQE scores, execute the batch script `run_test.bat` (Windows) or `run_test.sh` (Linux). <br />
+To enable NIQE calculation, set both `--dump_fake_for_niqe` and `--niqe_dump_path` to output generated images to your specified directory.
 
 
 <!-- --------------------------------------------------------------- -->
 --------------------------------------------------------
 ## Acknowledge
+- https://github.com/UBCDingXin/CcGAN-AVAR
 - https://github.com/lucidrains/denoising-diffusion-pytorch
-- https://github.com/lucidrains/classifier-free-guidance-pytorch
-- https://github.com/POSTECH-CVLab/PyTorch-StudioGAN
-- https://github.com/openai/guided-diffusion
+- https://github.com/lucidrains/classifier-free-guidance-pytorch 
+- https://github.com/NVlabs/edm

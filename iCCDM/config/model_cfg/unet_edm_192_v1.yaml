@@ -1,0 +1,18 @@
+name: "UNet_EDM"
+
+model:
+  img_resolution: 192                 
+  in_channels: 3                     
+  out_channels: 3                  
+  label_dim: 128
+  model_channels: 64
+  channel_mult: [1,2,2,4,4,8,8]
+  channel_mult_emb: 4
+  num_blocks: 3
+  attn_resolutions: [96,48,24]
+  dropout: 0.1
+  cond_drop_prob: 0.1
+
+data:
+  image_size: 192
+  num_channels: 3

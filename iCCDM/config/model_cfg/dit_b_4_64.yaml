@@ -1,0 +1,15 @@
+name: "DiT"
+
+setup_name: "DiT-B/4"
+
+model:
+  input_size: 64
+  in_channels: 3
+  mlp_ratio: 4.0
+  learn_sigma: False
+  cond_dim: 128
+  cond_drop_prob: 0.1
+
+data:
+  image_size: 64
+  num_channels: 3

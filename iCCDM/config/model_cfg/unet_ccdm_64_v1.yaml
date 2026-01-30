@@ -1,0 +1,25 @@
+name: "UNet_CCDM"
+
+model:
+  dim: 64
+  cond_emb_dim_init: 128
+  cond_drop_prob: 0.1
+  init_dim: null
+  out_dim: null
+  dim_mults: [1,2,2,4,8]
+  channels: 3
+  self_condition: False
+  learned_variance: False
+  learned_sinusoidal_cond: False
+  random_fourier_features: False
+  learned_sinusoidal_dim: 16
+  sinusoidal_pos_emb_theta: 10000
+  dropout: 0.1
+  attn_dim_head: 32
+  attn_heads: 4
+  full_attn: null
+  flash_attn: False
+
+data:
+  image_size: 64
+  num_channels: 3
