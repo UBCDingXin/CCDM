@@ -33,10 +33,6 @@ If you use this code, please cite
 [RC-49_64x64_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstI0OuDMqpEZA80tRQ?e=fJJbWw) <br />
 [RC-49_64x64_BaiduYun_link](https://pan.baidu.com/s/1Odd02zraZI0XuqIj5UyOAw?pwd=bzjf) <br />
 
-#### RC-49-I (64x64)
-[RC-49-I_64x64_OneDrive_link](https://1drv.ms/u/c/907562db44a4f6b8/EbJrU1Vc_p9BjgSOeKS8QUgBOZLbGTBsnShRGLXlRC516g?e=scNBPW) <br />
-[RC-49-I_64x64_BaiduYun_link](https://pan.baidu.com/s/1DgVy_AdQgFVVRbmTleggrQ?pwd=qfud) <br />
-
 ### The preprocessed UTKFace Dataset (h5 file)
 #### UTKFace (64x64)
 [UTKFace_64x64_Onedrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstIzurW-LCFpGz5D7Q?e=X23ybx) <br />
@@ -61,6 +57,12 @@ If you use this code, please cite
 #### Steering Angle (256x256)
 [SteeringAngle_256x256_OneDrive_link](https://1drv.ms/u/c/907562db44a4f6b8/Ed29A3YeV4NMjo-4qSFS8G0BlQpMUB4D0V_xNin8KpQIVQ?e=Ijztt6) <br />
 [SteeringAngle_256x256_BaiduYun_link](https://pan.baidu.com/s/1bSQO7c47F0fIlEhmQ95poA?pwd=mkxz) <br />
+
+### The Cell-200 Dataset (h5 file)
+Download the following h5 file and put it in `./datasets/Cell-200`.
+#### Cell-200 (64x64)
+[Cell-200_64x64_OneDrive_link](https://1drv.ms/u/s!Arj2pETbYnWQstIt73ZfGOAjBMiTmQ?e=cvxFIN) <br />
+[Cell-200_64x64_BaiduYun_link](https://pan.baidu.com/s/1wkXUT6XUfLpKZ_D9fAg__w?pwd=v2r1) <br />
 
 --------------------------------------------------------
 ## Preparation (Required!)
