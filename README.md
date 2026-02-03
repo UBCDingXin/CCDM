@@ -1,5 +1,5 @@
-# Diffusion-based Quantitatively Controllable Image Generation
-## The official implementation of CCDM and iCCDM.
+## Diffusion-based Quantitatively Controllable Image Generation
+### The official implementation of [CCDM](https://arxiv.org/abs/2405.03546) and [iCCDM](https://arxiv.org/abs/2602.02114).
 
 --------------------------------------------------------
 **[UPDATE! 2026-02-01]** We have released the improved CCDM (iCCDM) at `./CCDM/iCCDM`, designed based on the [EDM](https://github.com/NVlabs/edm) framework to replace the initial CCDM. <br />
@@ -12,7 +12,7 @@ If you use this code, please cite
       title={Enhancing Diffusion-Based Quantitatively Controllable Image Generation via Matrix-Form EDM and Adaptive Vicinal Training}, 
       author={Xin Ding and Yun Chen and Sen Zhang and Kao Zhang and Nenglun Chen and Peibei Cao and Yongwei Wang and Fei Wu},
       year={2026},
-      eprint={26XX.XXXX},
+      eprint={2602.02114},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
