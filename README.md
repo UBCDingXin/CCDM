@@ -1,5 +1,5 @@
 ## Diffusion-based Quantitatively Controllable Image Generation
-### The official implementation of [CCDM](https://arxiv.org/abs/2405.03546) and [iCCDM](https://arxiv.org/abs/2602.02114).
+### The official implementation of [CCDM](https://ieeexplore.ieee.org/document/11370252) and [iCCDM](https://arxiv.org/abs/2602.02114).
 
 --------------------------------------------------------
 **[UPDATE! 2026-02-01]** We have released the improved CCDM (iCCDM) at `./CCDM/iCCDM`, designed based on the [EDM](https://github.com/NVlabs/edm) framework to replace the initial CCDM. <br />
@@ -8,7 +8,7 @@
 If you use this code, please cite
 ```text
 
-@misc{ding2026ccdm,
+@misc{ding2026iccdm,
       title={Enhancing Diffusion-Based Quantitatively Controllable Image Generation via Matrix-Form EDM and Adaptive Vicinal Training}, 
       author={Xin Ding and Yun Chen and Sen Zhang and Kao Zhang and Nenglun Chen and Peibei Cao and Yongwei Wang and Fei Wu},
       year={2026},
@@ -17,12 +17,17 @@ If you use this code, please cite
       primaryClass={cs.CV}
 }
 
-@article{ding2026ccdm,
-      title={{CCDM}: Continuous Conditional Diffusion Models for Image Generation}, 
-      author={Xin Ding and Yongwei Wang and Kao Zhang and Z. Jane Wang},
-      year={2026},
-      journal={IEEE Transactions on Multimedia},
+@ARTICLE{ding2026ccdm,
+  author={Ding, Xin and Wang, Yongwei and Zhang, Kao and Wang, Z. Jane},
+  journal={IEEE Transactions on Multimedia}, 
+  title={CCDM: Continuous Conditional Diffusion Models for Image Generation}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-13},
+  doi={10.1109/TMM.2026.3660128}
 }
+
 
 ```
 
