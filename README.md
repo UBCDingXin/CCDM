@@ -7,28 +7,25 @@
 --------------------------------------------------------
 If you use this code, please cite
 ```text
-
 @misc{ding2026iccdm,
-      title={Enhancing Diffusion-Based Quantitatively Controllable Image Generation via Matrix-Form EDM and Adaptive Vicinal Training}, 
-      author={Xin Ding and Yun Chen and Sen Zhang and Kao Zhang and Nenglun Chen and Peibei Cao and Yongwei Wang and Fei Wu},
-      year={2026},
-      eprint={2602.02114},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+        title={Enhancing Diffusion-Based Quantitatively Controllable Image Generation via Matrix-Form EDM and Adaptive Vicinal Training}, 
+        author={Xin Ding and Yun Chen and Sen Zhang and Kao Zhang and Nenglun Chen and Peibei Cao and Yongwei Wang and Fei Wu},
+        year={2026},
+        eprint={2602.02114},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
 }
 
 @ARTICLE{ding2026ccdm,
-  author={Ding, Xin and Wang, Yongwei and Zhang, Kao and Wang, Z. Jane},
-  journal={IEEE Transactions on Multimedia}, 
-  title={CCDM: Continuous Conditional Diffusion Models for Image Generation}, 
-  year={2026},
-  volume={},
-  number={},
-  pages={1-13},
-  doi={10.1109/TMM.2026.3660128}
+        author={Ding, Xin and Wang, Yongwei and Zhang, Kao and Wang, Z. Jane},
+        journal={IEEE Transactions on Multimedia}, 
+        title={CCDM: Continuous Conditional Diffusion Models for Image Generation}, 
+        year={2026},
+        volume={},
+        number={},
+        pages={1-13},
+        doi={10.1109/TMM.2026.3660128}
 }
-
-
 ```
 
 --------------------------------------------------------
