@@ -2,7 +2,7 @@
 ### The official implementation of [CCDM](https://ieeexplore.ieee.org/document/11370252) and [iCCDM](https://arxiv.org/abs/2602.02114).
 
 --------------------------------------------------------
-**[UPDATE! 2026-10-06]** The improved CCDM has been accepted by IEEE TMM.
+**[UPDATE! 2026-10-06]** The improved CCDM has been accepted by IEEE TMM. <br />
 **[UPDATE! 2026-02-01]** We have released the improved CCDM (iCCDM) at `./CCDM/iCCDM`, designed based on the [EDM](https://github.com/NVlabs/edm) framework to replace the initial CCDM. <br />
 
 --------------------------------------------------------
