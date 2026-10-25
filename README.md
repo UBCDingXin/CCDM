@@ -1,5 +1,5 @@
 ## Diffusion-based Quantitatively Controllable Image Generation
-### The official implementation of [CCDM](https://ieeexplore.ieee.org/document/11370252) and [iCCDM](https://arxiv.org/abs/2602.02114).
+### The official implementation of [CCDM](https://ieeexplore.ieee.org/document/11370252) and [iCCDM](https://ieeexplore.ieee.org/document/11749609).
 
 --------------------------------------------------------
 **[UPDATE! 2026-10-06]** The improved CCDM (iCCDM) has been accepted by IEEE TMM. <br />
@@ -8,13 +8,16 @@
 --------------------------------------------------------
 If you use this code, please cite
 ```text
-@misc{ding2026iccdm,
-        title={Enhancing Diffusion-Based Quantitatively Controllable Image Generation via Matrix-Form EDM and Adaptive Vicinal Training}, 
-        author={Xin Ding and Yun Chen and Sen Zhang and Kao Zhang and Nenglun Chen and Peibei Cao and Yongwei Wang and Fei Wu},
-        year={2026},
-        eprint={2602.02114},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}
+@ARTICLE{ding2026iccdm,
+          title={Enhancing Diffusion-Based Quantitatively Controllable Image Generation via Matrix-Form EDM and Adaptive Vicinal Training},
+          author={Ding, Xin and Chen, Yun and Zhang, Sen and Zhang, Kao and Chen, Nenglun and Cao, Peibei and Wang, Yongwei and Wu, Fei},
+          journal={IEEE Transactions on Multimedia},  
+          year={2026},
+          volume={},
+          number={},
+          pages={1-12},
+          keywords={Modeling;Labeling;Diffusion models;Training;Conferences;Noise reduction;Matrices;Noise;Titanium;Image synthesis;Diffusion models;controllable image generation;continuous scalar conditions},
+          doi={10.1109/TMM.2026.3746733}
 }
 
 @ARTICLE{ding2026ccdm,
